@@ -38,9 +38,7 @@ export default function Header() {
     <>
       <header className={`fixed inset-x-0 top-0 z-[70] transition-colors duration-500 ${solid && !open ? 'bg-paper/85 text-ink backdrop-blur-md' : open ? 'text-ink' : 'text-cream'}`}>
         <div className="mx-auto flex h-16 max-w-[1440px] items-center justify-between px-5 md:px-8">
-          <a href="#top" onClick={go('top')} className="-my-3 py-3 pr-3 font-serif text-[26px] leading-none tracking-tight">
-            upheal<sup className="ml-0.5 align-super text-[10px] font-sans">®</sup>
-          </a>
+          <a href="#top" onClick={go('top')} aria-label="UPHEAL — back to top" className="-my-3 block py-3 pr-3"><img src="/logo.png" alt="UPHEAL" width="1400" height="378" className="h-8 w-auto md:h-9" /></a>
           <nav className="flex items-center gap-1 md:gap-2">
             <div className="hidden items-center lg:flex">
               {LINKS.map((l) => (
@@ -72,7 +70,7 @@ export default function Header() {
               </li>
             ))}
           </ul>
-          <p className="max-w-sm text-sm text-ink/70">UPHEAL — uncovering pathways, healing every affected life. Headlines, excerpts and thumbnails belong to their publishers; every story links to the original report.</p>
+          <img src="/logo.png" alt="" aria-hidden width="1400" height="378" className="mb-5 h-12 w-auto self-start object-contain" /><p className="max-w-sm text-sm text-ink/70">UPHEAL — uncovering pathways, healing every affected life. Headlines, excerpts and thumbnails belong to their publishers; every story links to the original report.</p>
         </div>
       </div>
     </>

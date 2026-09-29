@@ -14,7 +14,7 @@ export default function Footer({ updated }: { updated: string }) {
           <a className="block py-1.5 text-white/80 hover:text-key" href="https://news.un.org" target="_blank" rel="noopener noreferrer">news.un.org ↗</a>
         </div>
       </div>
-      <p aria-hidden className="mt-16 select-none text-center font-serif text-[clamp(120px,30vw,460px)] italic leading-[0.8] tracking-tighter text-white/[0.94]">upheal</p>
+      <img src="/logo.png" alt="UPHEAL" width="1400" height="378" className="mx-auto mt-16 w-full max-w-[880px] select-none" />
       <div className="mt-6 flex flex-wrap justify-between gap-2 font-mono text-[11px] uppercase tracking-widest text-white/40">
         <span>© 2026 UPHEAL</span><span>Feed updated {updated}</span>
       </div>
