@@ -1,0 +1,284 @@
+{
+ "fetched": "2026-09-29T05:29+00:00",
+ "source": "UNHCR Refugee Data Finder (api.unhcr.org)",
+ "items": {
+  "Ukraine": {
+   "year": 2025,
+   "code": "UKR",
+   "refugees": 5224131,
+   "asylumSeekers": 26583,
+   "idps": 3712000,
+   "topHosts": [
+    {
+     "name": "Germany",
+     "refugees": 1173192
+    },
+    {
+     "name": "Poland",
+     "refugees": 972287
+    },
+    {
+     "name": "Czechia",
+     "refugees": 392955
+    }
+   ]
+  },
+  "Sudan": {
+   "year": 2025,
+   "code": "SUD",
+   "refugees": 2820737,
+   "asylumSeekers": 940297,
+   "idps": 9139309,
+   "topHosts": [
+    {
+     "name": "Chad",
+     "refugees": 1330950
+    },
+    {
+     "name": "South Sudan",
+     "refugees": 571066
+    },
+    {
+     "name": "Libya",
+     "refugees": 551727
+    }
+   ]
+  },
+  "Palestine": {
+   "year": 2025,
+   "code": "GAZ",
+   "refugees": 48323,
+   "asylumSeekers": 16726,
+   "idps": 0,
+   "topHosts": [
+    {
+     "name": "Greece",
+     "refugees": 11083
+    },
+    {
+     "name": "Belgium",
+     "refugees": 8982
+    },
+    {
+     "name": "Iraq",
+     "refugees": 7044
+    }
+   ],
+   "note": "Excludes Palestine refugees registered with UNRWA; UNHCR does not report displacement inside Gaza / the West Bank."
+  },
+  "Yemen": {
+   "year": 2025,
+   "code": "YEM",
+   "refugees": 57327,
+   "asylumSeekers": 25860,
+   "idps": 4795983,
+   "topHosts": [
+    {
+     "name": "Somalia",
+     "refugees": 13496
+    },
+    {
+     "name": "Netherlands",
+     "refugees": 8709
+    },
+    {
+     "name": "UK",
+     "refugees": 5663
+    }
+   ]
+  },
+  "Iran": {
+   "year": 2025,
+   "code": "IRN",
+   "refugees": 157912,
+   "asylumSeekers": 49263,
+   "idps": 0,
+   "topHosts": [
+    {
+     "name": "Germany",
+     "refugees": 45128
+    },
+    {
+     "name": "UK",
+     "refugees": 42857
+    },
+    {
+     "name": "Canada",
+     "refugees": 13380
+    }
+   ]
+  },
+  "Myanmar": {
+   "year": 2025,
+   "code": "MYA",
+   "refugees": 1524378,
+   "asylumSeekers": 67824,
+   "idps": 3628840,
+   "topHosts": [
+    {
+     "name": "Bangladesh",
+     "refugees": 1178003
+    },
+    {
+     "name": "Malaysia",
+     "refugees": 140238
+    },
+    {
+     "name": "Thailand",
+     "refugees": 80411
+    }
+   ]
+  },
+  "DR Congo": {
+   "year": 2025,
+   "code": "COD",
+   "refugees": 1176489,
+   "asylumSeekers": 168421,
+   "idps": 5669479,
+   "topHosts": [
+    {
+     "name": "Uganda",
+     "refugees": 644537
+    },
+    {
+     "name": "Burundi",
+     "refugees": 109885
+    },
+    {
+     "name": "Zambia",
+     "refugees": 64792
+    }
+   ]
+  },
+  "Ethiopia": {
+   "year": 2025,
+   "code": "ETH",
+   "refugees": 164215,
+   "asylumSeekers": 148616,
+   "idps": 2378000,
+   "topHosts": [
+    {
+     "name": "Sudan",
+     "refugees": 47952
+    },
+    {
+     "name": "Kenya",
+     "refugees": 28874
+    },
+    {
+     "name": "Uganda",
+     "refugees": 10692
+    }
+   ]
+  },
+  "Somalia": {
+   "year": 2025,
+   "code": "SOM",
+   "refugees": 892037,
+   "asylumSeekers": 236271,
+   "idps": 3347408,
+   "topHosts": [
+    {
+     "name": "Kenya",
+     "refugees": 319471
+    },
+    {
+     "name": "Ethiopia",
+     "refugees": 317879
+    },
+    {
+     "name": "Uganda",
+     "refugees": 48253
+    }
+   ]
+  },
+  "Haiti": {
+   "year": 2025,
+   "code": "HAI",
+   "refugees": 180702,
+   "asylumSeekers": 236318,
+   "idps": 1430903,
+   "topHosts": [
+    {
+     "name": "Brazil",
+     "refugees": 105410
+    },
+    {
+     "name": "France",
+     "refugees": 26443
+    },
+    {
+     "name": "Canada",
+     "refugees": 22027
+    }
+   ]
+  },
+  "South Sudan": {
+   "year": 2025,
+   "code": "SSD",
+   "refugees": 2386499,
+   "asylumSeekers": 123984,
+   "idps": 1277527,
+   "topHosts": [
+    {
+     "name": "Uganda",
+     "refugees": 1033579
+    },
+    {
+     "name": "Sudan",
+     "refugees": 634954
+    },
+    {
+     "name": "Ethiopia",
+     "refugees": 422871
+    }
+   ]
+  },
+  "Syria": {
+   "year": 2025,
+   "code": "SYR",
+   "refugees": 4865764,
+   "asylumSeekers": 154355,
+   "idps": 5542227,
+   "topHosts": [
+    {
+     "name": "Türkiye",
+     "refugees": 2347756
+    },
+    {
+     "name": "Germany",
+     "refugees": 668647
+    },
+    {
+     "name": "Lebanon",
+     "refugees": 532357
+    }
+   ]
+  },
+  "Lebanon": {
+   "year": 2025,
+   "code": "LEB",
+   "refugees": 9568,
+   "asylumSeekers": 8798,
+   "idps": 64417,
+   "topHosts": [
+    {
+     "name": "Germany",
+     "refugees": 3128
+    },
+    {
+     "name": "Canada",
+     "refugees": 1631
+    },
+    {
+     "name": "Denmark",
+     "refugees": 945
+    }
+   ]
+  },
+  "Taiwan": {
+   "year": null,
+   "note": "UNHCR does not report Taiwan separately."
+  }
+ }
+}

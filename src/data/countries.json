@@ -1,0 +1,982 @@
+{
+ "fetched": "2026-09-29T05:28+00:00",
+ "countries": [
+  {
+   "name": "Ukraine",
+   "flag": "🇺🇦",
+   "tier": "Active conflict",
+   "continent": "Europe",
+   "count": 100,
+   "last7": 75,
+   "topTopics": [
+    "Military",
+    "Ceasefire & talks",
+    "Civilian harm",
+    "Detention"
+   ],
+   "articles": [
+    {
+     "topics": [
+      "Civilian harm",
+      "Military"
+     ],
+     "title": "Russia pounds Ukraine’s Kyiv after deadly strike on Academy of Sciences",
+     "source": "Al Jazeera",
+     "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPanFGUFdfOHZGbDEzWGp5dy14a2x1ZGFDdHpHM244cXRxZGxCa0l4VHo5VmNQNGJWTXZ2MGNGVVdUSzgzVU5WUHRKVHFIY29LSThxYTY2aHlvRjNoWk5sYm9nempQTF9IVEdiU3B6MXREXzNXLWctNnpBZ1dJeThFTmgzZjNiSjFEa3hlZzFhVFIxdWprWFRHVEk1cTlmYnczWVVVMzBRaXdJMjDSAbABQVVfeXFMUHVDUDFrWHlfc0ZJUVh3UkREZjJWNlpleXhKWVItcGRaRUVUeEwzRjN2bzZQTDd2aWlEaDVqVXV6YXBQX3VmZDRVWHZlc2dyLUlNNXZsTzNjbGxuUHBuN25xZGRhU2M0OUl5ZDExc3p0eGtRNDh4bk1GdjluNEZBZnlFZWt5ZXdNUFlPR09YSjdnY2tuRjY2S1ZfWDUwSWRybV9xYnJRX3hjeUM2cUhJSHo?oc=5",
+     "ts": 1790653417.0,
+     "date": "2026-09-29"
+    },
+    {
+     "topics": [
+      "Military"
+     ],
+     "title": "Ukraine war briefing: Putin orders army expansion as Zelenskyy says more North Koreans to be deployed in Russia",
+     "source": "The Guardian",
+     "url": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxQV0s2a3lxLThaVFpNaHNRS3E0a1Z5TkpyMHZjcmtFT3VyYV9GM2ZFWHhlQXAwMUwtbGNSRkIweUZVak40YUJqUDlrNzZJLTdGWENsZFVsSGkyaDhBMHM4VEZBSkR3d2wwaE5SOXN4NWlaUG94OTZma0trTVVycnVGYmZCa0dLQV9FMTN4Zldwamplek9iNjJ1WkJDZkxVT3UzMGpyWXVTQk1qcmo2OURZQ0JocDZjY3F6bG55R1hwdlMzc2JHOXI3RkE2SXNFdDhoSm5sSDl3VWFVZFNST1dmZjY3R3htVEVqNVVtazFfZG1kTUxrMzZjTw?oc=5",
+     "ts": 1790643060.0,
+     "date": "2026-09-29"
+    },
+    {
+     "topics": [],
+     "title": "Russia paying US recruits $26,000 to become cannon fodder in Ukraine war",
+     "source": "New York Post",
+     "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPTjkwdXFjNklMeDc3akczSjd6a0RmUEkyeG9KYjlGQUJjeFo2TDhhZFlJQ2RaczRvcENZT1pvem04eldIMHlremVCYWRyaFNTS2FWNkpVTWIxSHNSVXQ0REpFQkRxZE5ORTZRbTFXT294anZlNUVKNHNESV92MVFVZWJPNUdMY2o3VVp3d0I4OXdFYmw0U1NFMzROTDQtVzRlbVgtX3lzWTNiRkFUanB1NDNB?oc=5",
+     "ts": 1790637600.0,
+     "date": "2026-09-28"
+    },
+    {
+     "topics": [],
+     "title": "Pope Leo urges concessions for peace as Ukraine war drags on",
+     "source": "Reuters",
+     "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNUDR0QXpWV0M1Z2dOM1ZqWEZ3UVNreFFiYTh4dDBUU0Z2N0JKbWkyYjZqbnZVdm9HV01iTXNQbDRPMTJpTjZHUHp3bmR2bzZ4Z29FUHRaMTUxX2pVWTI4dlI3dVJtbDZUbUs3RW5fVkUwem9GVFFVZWR0UTZvQWpmX09NNzBLRWhNclBOeTA2TzNEY1FMVFkw?oc=5",
+     "ts": 1790618632.0,
+     "date": "2026-09-28"
+    },
+    {
+     "topics": [],
+     "title": "What comes next for North Korea soldiers transferred from Ukraine to South Korea?",
+     "source": "Reuters",
+     "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPVEZOX3k0QUF2VklIVEVuNjdxWV8taUtPNHBfcGhCMWh3Q3dzaXNvZGlPNjZfeWllWS0ySjlDeDBJSThFWVAyZU04Z1RwMXp1SmlaWF9SWVAtRktLSko0bkhBRm5ZUlFUSGtyazRpUGh4cUF4OWpjaTBncWN0RC1SVk85ZkJ4c29UOU9fTzMyZGQ2a1VKODBKWnRMUmJRS0RXd2h5NWM0SDRyeUlWLThvdnNsWFFIX0Q3YzZSYXRFbTI?oc=5",
+     "ts": 1790618383.0,
+     "date": "2026-09-28"
+    },
+    {
+     "topics": [],
+     "title": "Breathtaking Artwork in Ukraine Church Bears the Wounds of War",
+     "source": "National Catholic Register",
+     "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1SS21ibXZwVjA4bDUzWmoyZW5Tam4ySzd6bVJFam9CMnhiblp5dDhRbDNYaGpweUFpNEdUcVVmd0FxM2JXS0tzTm5odnZEZWdEVm5qaXhRaTEyY3FWVFFFa1phVFBzYVB20gFuQVVfeXFMTWxmaDBCaTNpcWl4VzlQYjR6LS00MkRvMUlXS2wxYWVuY0x0RzJqR3hjUWNTTVVNajRrQldsNmw5WGtBWE56YjNRWTEwcjhfRlFTU0tTa0szaFRNXzZuMmxHYUJ5MURUQ2hNa3lOS1E?oc=5",
+     "ts": 1790604545.0,
+     "date": "2026-09-28"
+    }
+   ]
+  },
+  {
+   "name": "Sudan",
+   "flag": "🇸🇩",
+   "tier": "Active conflict",
+   "continent": "Africa",
+   "count": 95,
+   "last7": 92,
+   "topTopics": [
+    "Military",
+    "Ceasefire & talks",
+    "Displacement",
+    "Civilian harm"
+   ],
+   "articles": [
+    {
+     "topics": [
+      "Accountability"
+     ],
+     "title": "Sudan’s Chemical Weapons Allegations Face International Justice",
+     "source": "Yemen Online",
+     "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE5QT1hwWW9qdE4wV0F2WnBtb2t0ckxiVER3Q1JOVkVMUUxCUUFyUWNRc09hYkVOYi1aaFVZTThFVEtBVlQ2d29qY3JoLXc?oc=5",
+     "ts": 1790646750.0,
+     "date": "2026-09-29"
+    },
+    {
+     "topics": [
+      "Humanitarian"
+     ],
+     "title": "UN reports sharp drop in Sudan cholera cases despite ongoing violence",
+     "source": "Sudan Tribune",
+     "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE5vcVZpUDhkc0Z3UlEtMGNBM2lSa0tIQnVCNVpHLXlWeFcyQURsOTlNZWdXcTZ6QnotR1c1UXl0ZEQyczBOY0p3SGktWmJCWERU?oc=5",
+     "ts": 1790638368.0,
+     "date": "2026-09-28"
+    },
+    {
+     "topics": [],
+     "title": "Sudan, UAE and Chad envoys clash at UN over war fuels and chemical arms",
+     "source": "Sudan Tribune",
+     "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFA5eHlqRjF2amZRVEFNTXUyUjBqQnJ2UUZkNzV3di0wTXFfbWg1Q2JINWxLOFRBSkxHN2lfdWxxTlRFQWVwV001Y1VMcVRDaTc5?oc=5",
+     "ts": 1790637166.0,
+     "date": "2026-09-28"
+    },
+    {
+     "topics": [],
+     "title": "Sudan death row inmates allege torture, secret trials in anti-RSF sweep",
+     "source": "Sudan Tribune",
+     "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE5JdWw5RjlXM29HU1JoOVhNazVVeTgyR3lHc296eW5UenhzLUYybXNDUXVqRWRSTHhrWUpoTjdmSzJOTE8zYnBSb2xubGN3Tk5V?oc=5",
+     "ts": 1790633884.0,
+     "date": "2026-09-28"
+    },
+    {
+     "topics": [],
+     "title": "US visa clash exposes Sudan’s forgotten war as foreign powers compete for strategic foothold",
+     "source": "Fox News",
+     "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPWEljd0lHdW1DZ01ONW44SXFuVHdORm84WUlrN0RjNnZUZzk1R2ZyS3lYdXVHTF9oWmlOVmpCb1hfSzNEYjg2QS1RaUR1cEdpYkd1QlZ4MDItcEY4cDVnZHpsT2loX29IRnFQbHV0NzJ3aTJ3bFo5LU80TEVaUFYyUEdSbUlMNW94VkhaUEtUVUxUdkdTOWhfTWJmRm5OWHk3aHpFekNsMTJFMEphNTE3czkxRUrSAboBQVVfeXFMTmpnU3FET0pMR1JzLWNWRjVxTm9Sa3BwVTZVVzBUblFjTEJoNWJvZGZDUllNN2VxUG9mWUJMdm1kdlJQbkNFUDk5NmpSWUpEaFVncHVxY3JwYWxKc3lqaUs2Q2hsai1ueWZveXJXREFBVWpNaExxcnN2X2NJTXcxU0d4WDhFeFNyOXNiOUZNajF4SkluTG1EanRnUng3SkVOT09TMHd6LTBsdXlieDNCX3ZqOFRUR0JTeExB?oc=5",
+     "ts": 1790633722.0,
+     "date": "2026-09-28"
+    },
+    {
+     "topics": [
+      "Ceasefire & talks"
+     ],
+     "title": "Rubio expresses frustration over Sudan as official denies claim it rejected ceasefire",
+     "source": "Fox News",
+     "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9XSWUtd1RHYTNSc3l6UElhdDlDWTMzTW1naW1RS3hmRmJJTHczWmlIU2QySHZnSFh2d1hHZmJFQnR1bFBsc3JyMGFXME94RXQtcXZmRDNn?oc=5",
+     "ts": 1790633689.0,
+     "date": "2026-09-28"
+    }
+   ]
+  },
+  {
+   "name": "Palestine",
+   "flag": "🇵🇸",
+   "tier": "Active conflict",
+   "continent": "Middle East",
+   "count": 89,
+   "last7": 81,
+   "topTopics": [
+    "Humanitarian",
+    "Ceasefire & talks",
+    "Civilian harm",
+    "Military"
+   ],
+   "articles": [
+    {
+     "topics": [
+      "Humanitarian"
+     ],
+     "title": "Privatised aid failed the people of Gaza. The world should learn not to repeat it",
+     "source": "The Conversation",
+     "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOY2tQbHlseFpFa1NMdS1zYlNFTHBCdnVtVjRPSDYwMzljZnRhQTFIS2ktbmdlNzA2ODgyek5fR190OHBLQnhHZXVyX2ZlbE9VWnJGQnk4ZnhXdTh0cVd6S21KSXBqR0habzN6dkhPbk16czMwWlBlNkNaaFVzN0NhalhoSTZ4WmJDRHFwY0lIS0ZIMDE1UGtZOWZzUm5QZjExYmtDREl0NlRZdzR2YzBBaURHUFI1QQ?oc=5",
+     "ts": 1790645460.0,
+     "date": "2026-09-29"
+    },
+    {
+     "topics": [
+      "Displacement",
+      "Civilian harm"
+     ],
+     "title": "Shafaq News..West Bank demolitions displace 140+ Palestinians in week",
+     "source": "شفق نيوز",
+     "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQb00xTGo3Z25sY0w2VkEzQllQcDFxb255TjE2b2ZpVUpjTS1BUl92NF9hWWI1YVFFY2hzbmxsZEp2TkpKNUdNc19Vb1Rpb3ZRRHFvbkFSSVFkbDlwcXFBTUZ2YlY5X2IteEJfSzdKVHFMMi1HY3JwWWp5eDhHTGRxRmQ1THdtZUE2ZThfcXM4ZUI3UUk?oc=5",
+     "ts": 1790631047.0,
+     "date": "2026-09-28"
+    },
+    {
+     "topics": [
+      "Military"
+     ],
+     "title": "Israeli strikes kill two Palestinians in Gaza",
+     "source": "The News Pakistan",
+     "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOUXVhWWV3Sm01REtKMS1qeFl2UWR1S2w0VXdnSHR6ZHRhMXczbDRTaThEX1E1TjNpbURzQldDZFgxVURGZExWdGswMDJROVNYOE8wVlVuejd5TGcwUXUzOFdKdWxCU3RKbHlCbGZudjdwWG1JUmF6Szk5V1UtNnNJaDVuTVBqNjZEVWc?oc=5",
+     "ts": 1790622000.0,
+     "date": "2026-09-28"
+    },
+    {
+     "topics": [
+      "Ceasefire & talks"
+     ],
+     "title": "At UN, Algeria says Israel seeks to divide Somalia, violates Gaza ceasefire",
+     "source": "Middle East Monitor",
+     "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNV3ItOTA2NWNXN0VoajMyVmFIQzRwRkxGM05QcW44X2U5cm5CZzZfcDFUNUJwZy1obzJOcXhsdHdUUGo1VWpwWEw1X0w3dFdGejdQQTRsbUNQMFhMRGtMR1pBRlpoTXQwOWh2MktnNmcwU2VtSmpWM0tFcVZxYjR0X2NCRVhqcG9fSV9nQXg0cUpMcml5ZEE1LXdXTlVqMjV6VEZ5MXdKVTZpT00xMEFoWHNPd1F4X0o50gG-AUFVX3lxTFBOVDMydTRjdFJRZWZtMVdScks3OXNJakZoV0JTbDVFeXlZV0pOcmpBem5JVkU0M0FER3lhV2NnVkR6MjFadXUzaWdSVHlaclFnWXJOOFd3VjRIdjNzOFdpd2NmTEtjMUFDU3ZWMExYblRJYk0xblp4dEs1TklvamZhcGlMVzNBWE5Jb2FLbHdOb1BlWjhGQmJfOVdUeVNseHZqWUw0OU1EZDd1WTJJWGR3cHgtN1ZrbGxVWHFmZXc?oc=5",
+     "ts": 1790619840.0,
+     "date": "2026-09-28"
+    },
+    {
+     "topics": [],
+     "title": "UN warns Israeli restrictions, funding gaps hamper Gaza winter preparations",
+     "source": "Anadolu Ajansı",
+     "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNZjYxRjdkaDRhazVMM2doTnptRm01WkMtc2dFUnN0Y0oydkpLZURsc2RTYzBYR0ZMaEJnbmFUNkRhY0p3SDQ0bm94UnNfM3FZSGtQRkNsZjk1dlpsOUFtVlVPS3ptZ3YxMFlacURRaU1YanBFRnN6NW81RVc4aXlkNXFlUVBFR3VvTDNvc29NQzM4WmV6MmczMmhoMWNMYUd4V2NWNUw1YlNxaEUxS3BOektMTUxNQVZITWVN?oc=5",
+     "ts": 1790617808.0,
+     "date": "2026-09-28"
+    },
+    {
+     "topics": [],
+     "title": "At UN, Sri Lanka calls for early recovery, reconstruction of Gaza",
+     "source": "Anadolu Ajansı",
+     "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNNTM4TDFtTkEzOEZEOGFRWmhhNUFET1dIc2RtQWRUb3NzNmV3WlhGdXVYUm5nQ3NqVklCdnMxTXY5SkZMekNyMWlmRWxsamlqYWpobi14NXhCRE1NemFHT25NbExLeWI4OGFnZjRCWWNlNnpwMVA0OU9OTGN4cFZaUGN3QWl6Y2ZmMU9vaHo2blRKRGk1ZXBEZmpINFI1WkMwVmVjOW1kM3Rmc2Z6?oc=5",
+     "ts": 1790617265.0,
+     "date": "2026-09-28"
+    }
+   ]
+  },
+  {
+   "name": "Yemen",
+   "flag": "🇾🇪",
+   "tier": "Active conflict",
+   "continent": "Middle East",
+   "count": 98,
+   "last7": 75,
+   "topTopics": [
+    "Military",
+    "Displacement",
+    "Civilian harm",
+    "Ceasefire & talks"
+   ],
+   "articles": [
+    {
+     "topics": [],
+     "title": "Yemen: The Houthis’ Role in the Next Evolution of the Axis of Resistance",
+     "source": "Middle East Institute",
+     "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQa2dZdnR4eHZZUElVNkE1ZGYzbmNUQkFKczBEMm5QeXpJUlR6NXROaUJiNWNlc0ttdUN0UXduZksxeFE5V3JnUmRZdDE5NVU5VGpmS252aHpvWWw1NE4yLU1iMDFMWFZNd3liSzlHVjRYNWRlaHhycUdPU05sVFcyM1ZOTjJIWmthVDNTTGFhSDVnRVp1bFVZaW91dlZFUDFD?oc=5",
+     "ts": 1790627184.0,
+     "date": "2026-09-28"
+    },
+    {
+     "topics": [
+      "Civilian harm"
+     ],
+     "title": "Children forced to give up school for work as fighting upends daily life in Yemen",
+     "source": "The Guardian",
+     "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQTzlydjR6ZTh2cDRHVGpHWnhhVW9RclU3ZzFnMWVZemVkY0h3WDJPWW45R1dSR1BBUHQ1cTc1SmVma1psQUcyYURWX1JYalJlRk1lMkt6OURHaXJNUks4a0s3Vy02TEFfQ1VMZG5MMnJtVEt1RW5XbXNzQ0tBc1ZIZVFCM1lnaWhiNW1QTzdQSG5UQS05NmlIMU1jTQ?oc=5",
+     "ts": 1790613540.0,
+     "date": "2026-09-28"
+    },
+    {
+     "topics": [],
+     "title": "Rubio meets Saudi FM as fight against Yemen's Houthis intensifies",
+     "source": "Al-Monitor",
+     "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPRTZTQnhlNXNFRjRVb2s0S2lNbG53NEVyRnVZTHIydjFsX2dxZXY1d2ZGNmQ0VW9KZ2pxbFpjSmlxNU9yNE9NZjEzdXp6QVE0dzlOZ1FXaFpiZGp2SXNWZW9RNzV4c3JENzFCdktGbHlORXAtNnFzQlBocnU4bU1iQWRISTh2bllaQ1pkMG8yQnBOTkYyT01ILVg0aktGcXZ2SjNsTGdMR2dWQQ?oc=5",
+     "ts": 1790613157.0,
+     "date": "2026-09-28"
+    },
+    {
+     "topics": [
+      "Civilian harm"
+     ],
+     "title": "Over 800 Killed in Renewed Houthi-Saudi War in Yemen, W.H.O. Says",
+     "source": "The New York Times",
+     "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPVHF5aTM3T1BqMlF6dGdCa1A5bXYzNVB0SnNuZDRhQ1Jvblk3NDBGMk9aQlFJMWRlTHNVSFdwVlZwNXUwRVRCYUlFeENhdk00N2tib1A2TzRXa29aWkFHbUhZeUxSZ2lNSzRiT3FrdEJjbFowVzA2TTR0c2FWbTNRdg?oc=5",
+     "ts": 1790612437.0,
+     "date": "2026-09-28"
+    },
+    {
+     "topics": [],
+     "title": "Yemen’s Houthis move to control crucial waterway – our research maps the countries most at risk",
+     "source": "The Conversation",
+     "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPNTNCV3JZWVVLX3lLNnFZMXdZbU8yT3h3dmZkb2lvSzc0NE51YXcwR0oycnMxZDU1Qm80OTZ4eXlyZXJ0aWltS1pOTmFBb3pUQVVIZmxiQTRhcV8wdFhVR0oxRzZnWVVpTjd1Wk4yYnZ6X2NBS2M3UTVyMExPQkdfbVBoQ3ZmcmFDVGRCd0FibkQ1Z0ZmTVJpR1dLcURwUUx0ZDVJYVQxWEZfS095V2lpZkRCZGJ4RElwc3JlRFBIakJMcEN3Ync?oc=5",
+     "ts": 1790599713.0,
+     "date": "2026-09-28"
+    },
+    {
+     "topics": [
+      "Military"
+     ],
+     "title": "Yemen's Houthis threaten to strike Saudi bridges in retaliation for airstrikes - report",
+     "source": "The Jerusalem Post",
+     "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE14OUMxZWp4Y3dLNmxLUVBJMXlfZnRQTnRJeTdBRUlxN2NIcUhKRFhBemV1U0syYnBkWVdmWUdmb2N3QWJ0UlpYdUpveWFmY21UVVFYcHBtcnRxUUlm?oc=5",
+     "ts": 1790592213.0,
+     "date": "2026-09-28"
+    }
+   ]
+  },
+  {
+   "name": "Iran",
+   "flag": "🇮🇷",
+   "tier": "Active conflict",
+   "continent": "Middle East",
+   "count": 99,
+   "last7": 86,
+   "topTopics": [
+    "Ceasefire & talks",
+    "Military",
+    "Civilian harm"
+   ],
+   "articles": [
+    {
+     "topics": [
+      "Ceasefire & talks"
+     ],
+     "title": "Iran’s Araghchi meets Qatari mediators as US calls for nuclear talks",
+     "source": "Al Jazeera",
+     "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPcE44alQta2RFLXNvU0JiaFZSbUxkcExUYzBMeEhRX0dWeUZMNVNUYUdybHhQOXpnZnRLT1BhV1RIVVIyTHBhUjdpNC0xN3huVl9fcVpxSExGZ213MGJobkl6b2Jvc0lRRWVUekNSWUVrQmM4eVZxQ1k2R3N3MDlqeWVSdFlxVE5NRVpzbmQ1LTFOanp6YU5SSHpzeWhuNkNoMVAzUk1hd0NvQVJmN3fSAbMBQVVfeXFMUGpqdDdjQnVuTmxIUWZxQWRlLUF3NTR1c2JjYlVWaUFJT0ZPMVF4MV9yN2x2RlZIWUs5Y0dyLTRfWG9TdTBqZjBibjl0ajB2Q0thcV9ZZnljMWVvcFRVTGh1aV9qX3MweE1ZNzdGWUJkbGhQeHZlUmdQWjB3eVJpdVp6Wks2OWh6cUZFeE9lWTVIb0RCRk5rOWJsQlphYzE3VlYzWGp1N2ZVdHVQYUJkUjlwNmM?oc=5",
+     "ts": 1790649586.0,
+     "date": "2026-09-29"
+    },
+    {
+     "topics": [],
+     "title": "Trump offers Iran economic relief for concrete nuclear concessions",
+     "source": "axios.com",
+     "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBzLTlNS2xVWTYwTmVybXRITlF0dW9lUXpfZkRpdjRXR29CQ2pKWTJORTlBUmZWaFBSLVIybG42Q3Z2TEp4aDlVMURMZmtoOGNfclJmSjMwS2hFZFZGUE1OenhhMzVSRUxCeDNnMkFlUlBoQWxuTFhMRkF3Zk9pdjA?oc=5",
+     "ts": 1790634459.0,
+     "date": "2026-09-28"
+    },
+    {
+     "topics": [],
+     "title": "Trump says U.S. will ‘win’ Iran war ‘very soon’ as he rejects proposal to reopen Strait of Hormuz",
+     "source": "NBC News",
+     "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNYkxDQ2J6eGYtYThlb3E0UzJtUm5Wd283SWhYUTY4d2JDYXVTblhlOXRzV2hMbEFpa0JPS2czRmE1eUJnTmU0ZGhYbkZ0aVRYeEI3YXZ3b1FDelMyUFZPbE0zTjlYZkZRUnlFSGlDcjQ4NDlBa3dxWFc2MDdPdTFGMUtGLXUyWURPWjVJRDl2Yy1iUk45aDVTdlhWQTVGejl6bFBFM2x5eUlDd0twSmJKUXhEUTlpRDVJbGttOVR2NnVIS2F5MEtWdVFuNnBwbENEYVFDSzhCbWhxRWJnU3hhcURzTEw?oc=5",
+     "ts": 1790632655.0,
+     "date": "2026-09-28"
+    },
+    {
+     "topics": [],
+     "title": "GOP senator says Trump should bring Iran war to an end",
+     "source": "The Hill",
+     "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNOVhoaGFFd1I4aUVYbm1NSUhLdXRZcXRsLTM4QldubnIxSEplQjBKWm5kS3RtOWNxa0s2T0RXMnRrV3VKUDdyelQzdkw1cU96NE80a3RxZVNWQnNRb0l1Q21SNnBCQTlWX0t6Nzctd2x4RHZwaFFWd1NjX0lRRFZlQlJB0gGHAUFVX3lxTE1KWHRGa1NONncxWFMzendhTVF1WHNka19hVlA2cm9nUG91enA0TFBkRXNtV1g5dFA0R2tkWDZaZ3NvbFRETmxaVU5XaVB4SkhKLVlJdW5nakUtV1hFY0plZjFadEttN2RZVk1jYkl5NFZ5eFgxbW9SY2U2SE1FS01aX2wyUi1Vdw?oc=5",
+     "ts": 1790629800.0,
+     "date": "2026-09-28"
+    },
+    {
+     "topics": [],
+     "title": "New US aircraft carrier heads to Middle East as Iran war stretches on",
+     "source": "Al-Monitor",
+     "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOUWk4bUxKOWEteDZjSUpFYjgyck9VR0J2M3NaNXoxZW9KUVAyRzJmRXlBWmVjT1RiY1QyU21weEljWUNpYXVUX3VMZHhoVm1KMkJRZGlkV2MtVjc0S0dIOUNhYkZ6anN2cndWdUNoVkhkV3JGeTlsTjhzRnc4MzFXNHp3RVN2d1ZBejRMRGV0a3YxQ19WNkxoOUx3dE5MOWFJN0hqM191MEE?oc=5",
+     "ts": 1790621303.0,
+     "date": "2026-09-28"
+    },
+    {
+     "topics": [],
+     "title": "As U.S.-Iran war hits 7-month mark, rising gas and airfare costs squeeze Americans’ wallets",
+     "source": "Spectrum News",
+     "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOTzBtRFFJazl2RmtaQ2xJNU95eEs1bU1DVTdEUC1VVllMU1VMd2x6MjJaXzJ5Z2ltcThGYlRoX0FnQ2szVi1CQTBhTEd2XzlzTTRCdk9POHNGNW8tOG9zdV9McE1CMndKbVBfRTBGR2pjM1FJUDl5R0dvVVZZSUdIck5CSTRvbjRHNHJUbG9lRG55TnRDNjh1R2dZUmF6VVMwdm9jVFFpZ2k?oc=5",
+     "ts": 1790617980.0,
+     "date": "2026-09-28"
+    }
+   ]
+  },
+  {
+   "name": "Myanmar",
+   "flag": "🇲🇲",
+   "tier": "Active conflict",
+   "continent": "Asia",
+   "count": 84,
+   "last7": 80,
+   "topTopics": [
+    "Military",
+    "Displacement",
+    "Civilian harm",
+    "Accountability"
+   ],
+   "articles": [
+    {
+     "topics": [
+      "Civilian harm",
+      "Military"
+     ],
+     "title": "Myanmar militia says 49 people killed in military airstrike on Rakhine township",
+     "source": "The Independent",
+     "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQTlFtM1dOR2NQbWpfRU9nZDh5TzBuMDlHLXlneElYdnZlX3dCUFo1a2FxUm9sMnlneDhOenVTLWJiX1dFeGJWMGxySXl3U1Q0VzNONEdXY1ZoZFJING5rU2UtQUI3c3o1TjZtZjFXTGlDWU1haXB0QWdfWmhpcy1ycnhZTzk1UWJ2WGl5RGx6bWFaOTZFNGw5bmVjOFA3aW9BTHAtR205SDdNQQ?oc=5",
+     "ts": 1790657100.0,
+     "date": "2026-09-29"
+    },
+    {
+     "topics": [
+      "Displacement"
+     ],
+     "title": "Malaysia begins sending Myanmar migrants to war-torn homeland",
+     "source": "New Age BD",
+     "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQU2tXbFpWVUFQU1FCZXYxRzVVY0xiLVh0REFOMThTU2hndFlCTmpMTWRIWlE5YVBvTjBjZnhwSHdLYm9XS25JN0MyZFlIZG5pemVvNXI0Q2hsMzlyMzZHQWJ3WFRBeEZLQ1hHZ2JQdUh4Y0h5Sk90WU9HcWIyQ3NyX1B2cnVtc1QtbllMQXNja3FCdEhEa1JkV2pQclBuNHM0YlVoeXdR?oc=5",
+     "ts": 1790656560.0,
+     "date": "2026-09-29"
+    },
+    {
+     "topics": [
+      "Displacement"
+     ],
+     "title": "Malaysia begins sending home Myanmar refugees despite safety concerns",
+     "source": "Reuters",
+     "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQeGktWktpcHgta29UNDlId0N1Mk1hY2RicGs5a2ZhSGx4WUNHdHRUVTN6aGZrQnJEY3hwa3o0MU1CU3dNRjZ2ZTNUSUhNUlRjeUxqd281Wlo5VlJzRks3TE5oRWl2d0F0UHdkZTJwcFBPaHpHTmZCOE1zbGRlLUNYYXp6MXQtQXZiNHB2WDVUbG1ieHRFNGlmbGFHTldkX2Y5MWZ4X25fb21BVy1FTm1CMWstcl9QZHpLZ3VzM1lnb3U4dw?oc=5",
+     "ts": 1790655780.0,
+     "date": "2026-09-29"
+    },
+    {
+     "topics": [
+      "Civilian harm",
+      "Military"
+     ],
+     "title": "Myanmar airstrike: At least 49 killed near market in Arakan Army-held area of Rakhine",
+     "source": "The Indian Express",
+     "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOVzZCY3hzN2hoNHE0a2Niak53Qy1nWVRKMHVQa1ViZVdCY0Jxd1MtRFdVbE5oMko3SXBmQWxITDZMbE1qN3c1V0xBLXVWb0FTS2VtVlhhMDRkZFVWZUhqeld2ZWoweThRTm1fSTlsUUtkMXdVSHlubWtsdVJZYWtGRlNQOXBCY3hjY1l3djRRbHJSMDh6MkE3eNIBnwFBVV95cUxPZTRwNjJMeVVrTDRsMk82QVFMV1l3UGhIZm53RUN6NVo1d0MtNEpSQ0V6enYyS0ZWX0V1NnhZaGp1QW9CQXh2eU4xd2VLamdxTVB2RG5hNF9rQVAtMVNCcHZicGdfWlpyZFdya2NjcUVYT3FocVVhdk4xeUZjdnRSMDRwcG5fT1Nsb2ZZYzlqNzVCUl81OEhQS1IyU0s3cDg?oc=5",
+     "ts": 1790654488.0,
+     "date": "2026-09-29"
+    },
+    {
+     "topics": [],
+     "title": "Karen Armed Group Leaders Attend Junta-Led Peace Forum in Southeastern Myanmar",
+     "source": "Karen News",
+     "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOV3pONmljUWdmX1JXTmxJQ1JWSGU1TlpZMTQ0OUlCYnYtd1dhYnNZSWtRcnF2QmgtNTMyelJHVW9IUTlvbDh4NXdEZzVxbUZ1TjFEMllMTW5FQmRsU05XTE9Lbk1wOW1sWkN1dVhKTk1VNFo5T1JXNnVHaURsWHNKTy1zb2pHQnRFbXp4NE1OVnhqcjE4TV9KWDZDY1FnLW1jd2UxdjRpcGVycHRmdEE?oc=5",
+     "ts": 1790652758.0,
+     "date": "2026-09-29"
+    },
+    {
+     "topics": [
+      "Civilian harm",
+      "Military"
+     ],
+     "title": "49 killed in Myanmar as junta carries out airstrike in rebel-controlled Rakhine region",
+     "source": "The Times of India",
+     "url": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxQRWZ0d3pmakpuckRuc1ZXN0FoRkQ0Y1NXOC1ZaTk1RndfWm9PaHpTd3JCSDNveUd6M2Z4dE5qZ0ZaVWFBd3FHU0ZnOGdqTGRDLU1Cc1NSNmJobHA3X0xCQ085bXpDa3hoVnZMQVd0eVhxd3V6bE0yS1R6MmprMExMRmlUWEpoMnFCSFlrT0xkOXlFN05YeFNPeUFPdGVxOWtsR0MwbkFDVWdfS3Q1a3BGeWVXUlFBVE1TM0NNaEtqcy1vYWE4bkpJb2JMUnJOdmtxYnFaVzRJejFpb0VOTGJ6U0U3YTI3Q2pnNlRZSW5jdmN2Z2QwLTh0NThFZljSAYICQVVfeXFMTm1yXzNOUGhDaHhfMVdsc1REUE9TOXZKN1FWLXZsQnl6cFRNa1oxSktOQ2N1VklpWUpmMS1KZ2NBN3pWb2NtWE5YV0R5UHhRRVNkZ2NwTThCUEFpN1VjcmFNZG5wak9rV3JTaldOM1I4UGZfbUNTb2dSM1pCOTVaT1NHNTNrR3lRYU82akRrTUV0ODRIekM3RUI2RkpnOFhOZG90SzhyQ3d1Nl9BaF9qdDNsb2ZEYlFLNWdtcnZjTS1TSTc2aFBiT0pyeG14TU1ieUZqV1RzTEZyV0UzU0FHb25ZU2w3OHdmWGN2cllyU0ZGdEhmYWZ6UlBISHNGN2JRNVFB?oc=5",
+     "ts": 1790650560.0,
+     "date": "2026-09-29"
+    }
+   ]
+  },
+  {
+   "name": "DR Congo",
+   "flag": "🇨🇩",
+   "tier": "Active conflict",
+   "continent": "Africa",
+   "count": 26,
+   "last7": 14,
+   "topTopics": [
+    "Displacement",
+    "Accountability",
+    "Military",
+    "Humanitarian"
+   ],
+   "articles": [
+    {
+     "topics": [
+      "Displacement"
+     ],
+     "title": "Call for EOIs: Protection and Community Mechanisms for Displaced Persons (Congo DR)",
+     "source": "fundsforNGOs",
+     "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNOTNyQ3lDeWVTTFotdVU1clNLZFU4eUZIdE9jSEIxS1oxdkVvR21nVEdJSExpSUpJd2NpWlZzQjhvYllOQlA4YlFSSmVZSzZ6TTg2NlVQVEdCcUNlVTA4N1lWOEpkcFJWdEFMSHM3bl9Vd0h1dHF0ckxmUTQwbkJ5c1NVbVZLMDBPS0NsYXM1Z05RS2ZFSkJLZ1JtaUdXcWZaQ3J0b0dJT1dmQnpiNDRoR2NmZ2hoS0dJTy1udFlMZVM0d2N1bDZ1bmcyeGJkekVXZXfSAdcBQVVfeXFMTjdNWS1WN1RKYkZpUDVDTkgzSm5wU2FJVUhBSVVRdXNxR0FlSlV5WHQ2U0tUVl9mRzJqUGFVaFdseUx5M1VBNm1Iai1kbUsxVmtaaFVfSmlpcnI1X3h2UXMwc1QzUGVkcFc4Zk5ORXd4QXY1NGkxOHVPQjBKcmRHaUFIUHpVbndqUkxhdmItN21iYkZGU1QxdmNHcnNFY0UzTmRBWEphcWYwVUh1SkNoOTd2SlR2MV81UnV2UUxHR3F6eThJUTVrdmZ0bmZqR2Fva0liOU5HODg?oc=5",
+     "ts": 1790620226.0,
+     "date": "2026-09-28"
+    },
+    {
+     "topics": [
+      "Displacement"
+     ],
+     "title": "RFAs: Improving Health Services for Displaced Communities (Congo DR)",
+     "source": "fundsforNGOs",
+     "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxONmR5OS1KYVZoR0ZoQ2JPbi1GRmlUelNoU3B6MTB5bkx3ODlhYmw2bXV0Y0ZTb2p1cVYwSWN5eVY4ZTdsZ0xtS1E0bmVubkdlTUJxRGZTNnRRaUJlOFpzTWdsQ3l5eUttR0hQaFFZRl95SFZhTklRTGQzcE90WXRHUDBLN0lDT3NOeTZyejJzbm5vWFY2N2tsRDRZOWpaSkxIWHF3aE5jYTlUa2RISkpUMnpycDRDeFlJR1lMQtIBwgFBVV95cUxPWEFIV3VyYThPU2Z0Y2ZVZ0xmZXJ2cElyT2JfREpCd1J1MVE5ZXBwa3NKc1lfY0tQMG1sN0V6TFlCOGpDZTM1a0lJU0Nndm5fdEZxTkNwSGsyTWRsUHduVXp2d3pWRUdWRkEzX05GeGFrXzZsTEZNZlVmRGstUWRvQmNtdmlLc0I0N0ZYcjhXaDF5N1llUXU1UlQ5a3RMMHhpNmpIS3ZFNU1GbnFXbUpuSW5rX0dpV2xJdndOSHgxMVpWdw?oc=5",
+     "ts": 1790576790.0,
+     "date": "2026-09-28"
+    },
+    {
+     "topics": [
+      "Military"
+     ],
+     "title": "Outrage Over Return of Gen Ekenge as DR Congo Army Spokesperson",
+     "source": "ChimpReports",
+     "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNZFZpdDBHVm5lYzZxNl8xVFlvQmtIMG1TZFltUVNQSHR3dWtWUkdYTE1TdVRvZDFDaUdDZ2hFeUppamY3OGVNWXNWRThpY0tDOXQ2TzhSNVJqZjktVEZaajlCLWc5T3pGazlSMEFUY3Zwc2o4WU9IbTgxWGVPU3BMbEtVb3VFcEJYdEJUUU51eVhPTHM?oc=5",
+     "ts": 1790575922.0,
+     "date": "2026-09-28"
+    },
+    {
+     "topics": [],
+     "title": "Congo War Security Review, September 25, 2026",
+     "source": "Critical Threats",
+     "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOcDFkNGtyd0JuWHdiOVBuMEN2YnVTX0NzVHNCSEpTTVJyWVNLb3ZpTVZyTjNCQzlpRFh6eEJ6bTlVYjRFc21pQ0x1aDNxdGJkMFhHM1lidUpYa2J1NWh3SVhjOVJFcFVfaU9NNDI5ekdLWTktdVlTcVZZS1NaeENCZkRfUWpHajJ3OEE?oc=5",
+     "ts": 1790395243.0,
+     "date": "2026-09-26"
+    },
+    {
+     "topics": [
+      "Displacement"
+     ],
+     "title": "‘We fled with nothing’: the people making perilous journeys to escape violence in DRC",
+     "source": "The Guardian",
+     "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNUlROS3hXU0hlTXlnaWpZVnFxU0F2QWpPdFRwRm5Pck1QUjMwZ0lYRHd1eVAxRXBUS2hLNFhrdk5zbjUyR3NibXdGSXhTU2tNTmdGdzg1dHEtNl9VZ1I1bV9RRFZ6cGRIbnJUSWRrZXNLYzFhZkg5dElhLXRTdjNJNE5MT3ZJMkJ4UDhkNUc3Q0xIQXNRNDZXMkFMMS05UVNSQjdtNHpNRVRnUUlZOTlOcUpLM1VxUUtzRGFRRHJFelMyZlpsUDUw?oc=5",
+     "ts": 1790266500.0,
+     "date": "2026-09-24"
+    },
+    {
+     "topics": [],
+     "title": "‘Peace remains only a promise’ for millions in eastern DR Congo, General Assembly hears",
+     "source": "UN News",
+     "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFAtVEIzak5YZkV4dF80a0ZBTXRzSEE0cWxzMGFCX0cxamFpV0EySGFsTjRsbTVlV0pUOTZLQ05URS1LOGFjcDFuSEFlY2VkbmtZTUl4TVNyMA?oc=5",
+     "ts": 1790251424.0,
+     "date": "2026-09-24"
+    }
+   ]
+  },
+  {
+   "name": "Ethiopia",
+   "flag": "🇪🇹",
+   "tier": "Active conflict",
+   "continent": "Africa",
+   "count": 87,
+   "last7": 83,
+   "topTopics": [
+    "Military",
+    "Civilian harm",
+    "Displacement",
+    "Humanitarian"
+   ],
+   "articles": [
+    {
+     "topics": [],
+     "title": "Eye on Africa - Ethiopian forces claim Tigray town",
+     "source": "France 24",
+     "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBrOGJBVzFPVVc2cEIxY0VTUS05ZFlGVXVZSlIwQ2RRWkp2aEhyMTNrSUNkOFpVY0V5ZVN1NDdROVQxZThqWlVQQjJkcUJ2WXdyeWJkOHV3RllIQWo0czk4cHB1MV94SmYteXE3Q0JfZw?oc=5",
+     "ts": 1790627558.0,
+     "date": "2026-09-28"
+    },
+    {
+     "topics": [],
+     "title": "Ethiopian pro-government forces claim capture of strategic Tigray town",
+     "source": "Reuters",
+     "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPUjNEWTc5Q1dFTC1VdlRWS1lFUnFOSTBSUTc4S2tfTHRvMmlhMlpzalVtb25RMW0tbnk2R0tuNThvX1J2MUZhWlZzYlpGYndqc2JaWG9Bb0RPM1FFMWRTVndwcVBicTUzMlQ1eVRSWnl3OEVSR0hCMVlyaVBYVXBRaDhLSjE2ZjNsTVByM3dGSklBMjNVdkVJdnhxcGlJQmtlVXpQcmx2LXFya3FaMnJyazliaGFTWjVwcG5J?oc=5",
+     "ts": 1790626637.0,
+     "date": "2026-09-28"
+    },
+    {
+     "topics": [],
+     "title": "Ethiopia’s Next Civil War Won’t Be Like the Last One",
+     "source": "worldpoliticsreview.com",
+     "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9odG1HU0JnbUlmeTBycEJxLUl1eVRCQXVXVGFlZFNqVGRCaFFvSjVwRmtnMUM0WTV2QVkwaXlpQnZvbW1PZW12dVBPd1lyeU55UUpmVjZqa0Q1YUs3dmE1ZzJvQVMyUkZGbWNpSFhSRUNHSkVXaXc?oc=5",
+     "ts": 1790622350.0,
+     "date": "2026-09-28"
+    },
+    {
+     "topics": [],
+     "title": "Ethiopia pro-government forces say they take Tigray town",
+     "source": "Courthouse News",
+     "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNczhPWEMwOVZCNjc3RGdhWlFXZ1R5T3RDRGVPTTVnRERxQ1ppaHB5eVY1dlh2S1cyZGVHcjRFd2x2STM5UjVWU01TaUw2dkpXWDhxaEkyWHJQN1ZIM3MwRmFDa24yYzkxbWY3OG94NTdyQ09uUlVsckItUTNQYWs3WnFEYkxvWkZ3VUNBeE9yc08?oc=5",
+     "ts": 1790621875.0,
+     "date": "2026-09-28"
+    },
+    {
+     "topics": [
+      "Civilian harm"
+     ],
+     "title": "Ethiopia: Hospitals see surge in war-wounded patients as fighting resumes",
+     "source": "Doctors Without Borders",
+     "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQYWIwdjI0VkxnaGprSHFFekxCRHl5UHdnTDdrZG9hWVk3YW52eTR6eFBKcWp0aVJtSm5kejd5LXQtbk8xUHZSc2F6R25XVUZadjdxNWVIMmxaRU93U0JuNGEtMW5XenJhSHctQnhDMng4LXJLbDRIblFVMFdaZTE2LUcwYUpqbzNTa2RvNjQ4OGc1UmJXUS1FbWo5clo4VmQzTjJoSUc3WTVJWEJSWkczeg?oc=5",
+     "ts": 1790618312.0,
+     "date": "2026-09-28"
+    },
+    {
+     "topics": [
+      "Military"
+     ],
+     "title": "Ethiopia’s army chief accuses Eritrea, Sudan and Egypt of supporting Tigray rebels",
+     "source": "ABC News - Breaking News, Latest News and Videos",
+     "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNNE83WS15WEo5aEVfZktRRUhHamo2UkxOUzBscTQ5T2FhSTc1d2NOUDBwZ1VESTd2WHNGYUNaQTJGN3BoWjdvRDBfMXJ5V3drS2lIZ05wYTN6VEVkeDd4eURxRDE4b3BxX05XMWM2WGZud2c5V2hkNEYxUGFqajI1UXNLQWhBMVZIZFZLUDc0U3dFUmo0TF9hMGN5Q3hYUzJUOUJYLVFZSVNzdE9qdjFNNG1wNNIBuAFBVV95cUxQWG9BeTJLYUFOelRRZDJPajZpakptMGNYMVZPYWdqeFhHZkpVYnBmWi1zWkp5dFVaaEwzMFUyS1dUYUFvYlVsM1V4akxwS3ZrTS1pNExHWUZ4Nl82U09NVEFodmtSUkJCZktWLVljQUQ3VTlCSDMxNC13MWlyYlBTOHBRWTY2b252alBESTZOMlNLRmNjNTFSTWoxTWpBaVBia0pGUEo2dk8zRm95UmR6aGxIWEg3VkZw?oc=5",
+     "ts": 1790614534.0,
+     "date": "2026-09-28"
+    }
+   ]
+  },
+  {
+   "name": "Somalia",
+   "flag": "🇸🇴",
+   "tier": "Active conflict",
+   "continent": "Africa",
+   "count": 60,
+   "last7": 43,
+   "topTopics": [
+    "Humanitarian",
+    "Military",
+    "Displacement",
+    "Civilian harm"
+   ],
+   "articles": [
+    {
+     "topics": [],
+     "title": "US warns Houthi ties with al-Shabaab threaten Red Sea trade",
+     "source": "Financial Times",
+     "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQalgwRzF0YlMtcnZBclJoMU14M1FYTkdUNVQ3N2F1MDVIZnhsY09MWDZ6dUlONldzODVTNkl5akNkVk1YcFpiVF96VEt0QzdMUVF6UXJMakw3eGhxUXhtRGJaTmFKQ2RYZV95UW1DZnAtLVZyaHZMY21ZbHNXM3NmVmdaZ0I?oc=5",
+     "ts": 1790654440.0,
+     "date": "2026-09-29"
+    },
+    {
+     "topics": [
+      "Military"
+     ],
+     "title": "Al-Shabaab attacks in Mogadishu down 87% since 2023: minister",
+     "source": "Somalia Today",
+     "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPYkttbkxCdFU5UTRGeEd4ZnFsUWhwcWJfQmE3aDdMVVVGRVJyaFdFaGpkUzZIck56R2dCckpTM3JmVjFfZEtHdUxkb3FrUEpmS3A5V2xTMkJrckxFVXpHczAzamdwNVpDNEVXUHBmdkFTa183MEZIQW52eWM0SnNDWFBxYUYzMklmNmM4Zm5GMFBSSjFYMk91cFd5d0tTZkcxVG5faW85TzA?oc=5",
+     "ts": 1790642679.0,
+     "date": "2026-09-29"
+    },
+    {
+     "topics": [
+      "Civilian harm"
+     ],
+     "title": "Fighting in Somali city leaves dozens wounded; officials say 70 militants killed",
+     "source": "BNO News",
+     "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPRVlBRmpBcTBESENNVE91WE92MVl6WUVhRDlwU19Vd250MkJvc2l5OUxaamRnUDJvV0FNc0xUdVBnOFd2WGZDUVZBdlBLamVGZWpmWDdWdVEwYk5xMDM5UEo4bUpPUVRKZ3ZFZGRJbDJxSXBCTm1PWXZWQm1nZUFCNVZmVHNGVUZoNFFNRHdfU0hnNlBSZmgtV2JuNFpaYjIwdkwxVm16NVJvSTZQQTRBMUp1enVLWHAwM2c?oc=5",
+     "ts": 1790629617.0,
+     "date": "2026-09-28"
+    },
+    {
+     "topics": [
+      "Displacement",
+      "Humanitarian"
+     ],
+     "title": "UN: Baidoa Conflict Risks Famine Among Displaced as Aid Funding Dwindles",
+     "source": "FTL Somalia",
+     "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxORno3MVlQSVpRMnhodjZ0MWNtVFVrcVBrYUJQVTdZMERQa1NOdXFhVDg5WkstaDhEWlZXQ0FHU0U0QjZmOGdSWE5nM3dCVGZJSEIyN3c1bm5JSHhweDRHd3hMOWpYYmRoT01aZ2l2SGhBbllzMzgzd0wwVXRzQWRTU0F2M3loQnRLS1VNS2E1VktkQUtzWnkwVWV2UVU4SkFM?oc=5",
+     "ts": 1790622253.0,
+     "date": "2026-09-28"
+    },
+    {
+     "topics": [
+      "Military"
+     ],
+     "title": "US Launches More Airstrikes in Somalia as Trump Continues Record-Breaking Bombing Campaign",
+     "source": "news.antiwar.com",
+     "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQWmUzdndEUFdmVkJFMDZLenNScW8wUThKY1BFTHVCd01HSC1BeUE3ZUFiTExKZTRGbE5HV0V0M1I2Sno4dC1wYUxIMjFuNXhpRnJxUDdFTjFxMlJxNjd4XzYtWFU4cTNmcXFMUmtJNHBtb3NPX2VUeGUxbVRGNzlwM3FXQmdqWWNUZEF5Y0kwSjZ2STMxR1FqVnNxVF9jWUxtc1N1clVzdWcwSC1qdk5TelJha1k4TW00VUh6WHViQVZGdnNuSGc?oc=5",
+     "ts": 1790617440.0,
+     "date": "2026-09-28"
+    },
+    {
+     "topics": [
+      "Military"
+     ],
+     "title": "Fighter jets, drones in heavy Somalia fighting",
+     "source": "Bangladesh Sangbad Sangstha (BSS)",
+     "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE8wMHp6TmctMzVjVXUtcUdhRWcwdlNiSXFlUnFLM2pOa3pmbm4tbFpLaW4zVzNWVl9HRHo4OFNMeHo1YXQzVHlqS3ZVOGNjdzlLRTNFX1RNSQ?oc=5",
+     "ts": 1790604526.0,
+     "date": "2026-09-28"
+    }
+   ]
+  },
+  {
+   "name": "Haiti",
+   "flag": "🇭🇹",
+   "tier": "Active conflict",
+   "continent": "Americas",
+   "count": 44,
+   "last7": 37,
+   "topTopics": [
+    "Displacement",
+    "Military",
+    "Detention",
+    "Ceasefire & talks"
+   ],
+   "articles": [
+    {
+     "topics": [],
+     "title": "Elections Approach in Haiti Amid Gang Violence",
+     "source": "dailyasianage.com",
+     "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOTVhYLUtiUFZVcEFLQ3dwRVRQV18xcTJWSFk1VmRSQkFGODU5Znh0Z1lUWEJfNFNwdGxJajJLeWwtR29sUFJYLUlqV3Z2bWVhNHRIcWtYd0E4RFRtdEFJRUVwVWRlWVF1WG5kUXlrRDRKcU5QVlNwdFJGdUpUQ0YzZERHS1RxS0otRjRaRA?oc=5",
+     "ts": 1790620197.0,
+     "date": "2026-09-28"
+    },
+    {
+     "topics": [],
+     "title": "Prime Minister Says Haiti at ‘Watershed Moment’ and Urges Full Backing For Security Force",
+     "source": "Caribbean Today",
+     "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOdGN2ZkVJNkFiRHFlUXBvOW9od19nd0hQeWpIempMd1JqX25HVVBoNms5Q0l4ZlNRclpGV0lheW41cEhtckZHa015ODNITURCQldTenRFQTRSdHA0M0dKRkZsX19zY2gyV0x4YjR1eGlHdnYySWp1SGZpZjMzZFhkWVhnTU5IUnZ5U0JnTGpwNFloQnYxVjZ4WW9SR2NDNnZDYjVmZ1dHMmx0cEw5WkpZRUQ3V25pWGxFM0wxQ2h6dHo5WURzUDhDSHRyYTVQNHhxOXc?oc=5",
+     "ts": 1790608049.0,
+     "date": "2026-09-28"
+    },
+    {
+     "topics": [],
+     "title": "What to know as trials over the assassination of Haiti's president resume in Miami",
+     "source": "ABC News - Breaking News, Latest News and Videos",
+     "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOdWdYcm1WYkxNNEk1OHV5NUFDdWFLN2phLUg3emFNalpWVmgweXJoWUI1SEN6VGV3NnJIRjdXSXpnSXAwQ2dlUnV0MnR2ci14QTJVRkNoOENyX0RuRDZGZ1hPUHkyY21pRDRrWHExUmh1VjBYUTgtdm5MaVI5UjR3Nm1pdzM4Q3Rjbk5MektDZjZuS1c1M1FZSjdKLTNmZ9IBngFBVV95cUxOdWdYcm1WYkxNNEk1OHV5NUFDdWFLN2phLUg3emFNalpWVmgweXJoWUI1SEN6VGV3NnJIRjdXSXpnSXAwQ2dlUnV0MnR2ci14QTJVRkNoOENyX0RuRDZGZ1hPUHkyY21pRDRrWHExUmh1VjBYUTgtdm5MaVI5UjR3Nm1pdzM4Q3Rjbk5MektDZjZuS1c1M1FZSjdKLTNmZw?oc=5",
+     "ts": 1790568120.0,
+     "date": "2026-09-28"
+    },
+    {
+     "topics": [],
+     "title": "Haiti says it is halfway toward goal of training 4,000 police officers",
+     "source": "haitiantimes.com",
+     "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNVFdaVmk2TVR0UjVZNVNHWXdLTVF4cmdkUHR2RTZnTkdRclhMMG1VQ1VoeDFKQU1SenBDUXBiX1pEWmEzb1FqNGlTQmY1R25Pd0RncXh3Mi1CMDRYdXJINTdSeFI4Qi1NSWRjbGozQ0hieWR0YlkwdTR4dXJrVzJvaVljRQ?oc=5",
+     "ts": 1790532582.0,
+     "date": "2026-09-27"
+    },
+    {
+     "topics": [],
+     "title": "Haiti Prime Minister Tells U.N. the World Has a ‘Shared Responsibility’ to Prevent Crises",
+     "source": "breitbart.com",
+     "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOc2Q1SHpYd2JybnFYSHdwbVJxS3dZa1cyV01iWlFQWlFEemhtU09LSkVuTEUwd29NM0Uyd2VBQVlfbFRaZkxEZGU4d1FJX1hYQWplTnYzWHhHWGZOdmZwTFJtQklGWjlfMUJWSlRrN2FyZ1BGakdOQmUwTU9pb1VRLWt6WkgyWDYzTi1UX1BPY3U2Y1czOGh5UUdpaHIyQW5ob3Q3emZiTmhhaHJIT2ZLa3NHZUUxTXVQUWRfUDU4ZS13WXdFaHNxUnoyREUzQ0ROdjQ2SzZHcGVKUdIB2gFBVV95cUxOc2Q1SHpYd2JybnFYSHdwbVJxS3dZa1cyV01iWlFQWlFEemhtU09LSkVuTEUwd29NM0Uyd2VBQVlfbFRaZkxEZGU4d1FJX1hYQWplTnYzWHhHWGZOdmZwTFJtQklGWjlfMUJWSlRrN2FyZ1BGakdOQmUwTU9pb1VRLWt6WkgyWDYzTi1UX1BPY3U2Y1czOGh5UUdpaHIyQW5ob3Q3emZiTmhhaHJIT2ZLa3NHZUUxTXVQUWRfUDU4ZS13WXdFaHNxUnoyREUzQ0ROdjQ2SzZHcGVKUQ?oc=5",
+     "ts": 1790453846.0,
+     "date": "2026-09-26"
+    },
+    {
+     "topics": [],
+     "title": "Haiti's Prime Minister's address to the UN General Assembly (video speech)",
+     "source": "HaitiLibre.com",
+     "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNMWFCbjBUbllvQ2hIMzRlVXp1Yk1SUU9naWJXZlN4OWZvd2JGTG1tN1F4S1dHa2ZENlRUZ1FpdVZfOGRPUk1yc3d2eFFKVnc3bjFYYndnTmRFa3FNenVhNHJmTElwc01rRmxGQ1BlZW5USzc1UUZjYWVYbUtaMXJXb3VsV05PVk55eklFeE1uUkJxazZJVDMyWWVsSnViOXVXNlVfOEFabkJ0RkVHNkZPSzZ1OGFtM2ROX3c?oc=5",
+     "ts": 1790431133.0,
+     "date": "2026-09-26"
+    }
+   ]
+  },
+  {
+   "name": "South Sudan",
+   "flag": "🇸🇸",
+   "tier": "Elevated risk",
+   "continent": "Africa",
+   "count": 45,
+   "last7": 32,
+   "topTopics": [
+    "Displacement",
+    "Humanitarian",
+    "Ceasefire & talks",
+    "Civilian harm"
+   ],
+   "articles": [
+    {
+     "topics": [
+      "Humanitarian"
+     ],
+     "title": "Government of Canada extends temporary border measures in response to Ebola disease outbreak",
+     "source": "canada.ca",
+     "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNQy0wcmJSb3Y5ZmF3MU5FaExvbUVValE0eTU0MGQxRmY2Q0t3SWZVS0hEdk1wczVIdXdBM0MweExNTVRrenJabVJtS0V0OG9veFlBLUFqRTlWX0FpeGZQcXJQYVh4N3RXeGRwMHBkTVdmUGhSV3o1c3loeHgwdHVTbWk0ZXNXUWFjVFpHcktrNUZKRDBIMGdTRWdDV050MkZSbGFHc2ZGbmFRRmpSaU80YVExNENnYW9PNkhLeVpWUHdpUF9EVE45U3I1dUEyWmdHRk5RRWZ6bXg1QQ?oc=5",
+     "ts": 1790620419.0,
+     "date": "2026-09-28"
+    },
+    {
+     "topics": [],
+     "title": "Egypt coach Hassan seeks to calm Salah tensions ahead of South Sudan clash",
+     "source": "geosuper.tv",
+     "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxObFRwdFFSQU9aSWx6Ykx4ZTJWUFp4Z1BvNTc5TkZhOXlnMVdSMkR5MmN1YUcxVUxmbF9NMXlITjlfUE1jV2NIMl9KM0xZd3lGM3NsbXdla3dLRDlZZWJpU2VvNGtzc0J6UnJ4TEx5VUJtZE1hODVKUElLTGMweWFYbTZidFo4VThMazZRVUltRHYxcE9JSmpnS1pXNHR1N2NuYi1tWDR6cy0wTDljTkFjM9IBrAFBVV95cUxNd0VYYUFpQlVMQndtc1NNR0puZ19MZFM2YXNqdllLS3lZWjE3QmV2VnZFWGFva1Z0cGJSbDJLaTBSMGZfSGluVHB6UkpEcDZwOVZ0U0g0cllTWGotUXZQcG9oQi1SYUJIU3FlbE84dWVfb2M3TEFjWGhhcWVNZ2dTeHpST1NXYWRuUVl3Q2xTZkVDSmtFdnBtZHNpMVVLZXc5SGFNbzIxbzFPclJj?oc=5",
+     "ts": 1790614560.0,
+     "date": "2026-09-28"
+    },
+    {
+     "topics": [],
+     "title": "Sports ministry moves to calm tensions within Egypt n…",
+     "source": "YSscores",
+     "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOSUNfQjZfR2dxVlFtS2dnaHRQdEN6S3hCTms1Z2hwbWc1bmpLTHpKaFptQlhMbmtvLWJydF9UWHRoSXBZSXZwaXBpOFBjbWhsbFpNNjFqNXVWRTRNOERUdUFMYkV0N0tIaWg5YUtEdXQyRGY1bVAxaU1lTG1yOVYwT1BzUG5qVEZjZlFsWlIwZk5nci1RUnFueWZNNTVOXzFHRHdxcDRSSE9aLU0?oc=5",
+     "ts": 1790612911.0,
+     "date": "2026-09-28"
+    },
+    {
+     "topics": [],
+     "title": "Egypt boss Hassan seeks to ease Salah tensions ahead of South Sudan qualifier",
+     "source": "CNA",
+     "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPWVBmSG9GWVVSMTBCV2VsaHVIOGNaOS1tcFd6T2dTOThWWklqYld1M3l5NUZqc0dUMllyNGV6dUxNekpxSnBLeEE2bnVDVFZ5LXh5RHNING0zZll0NXZTZi1MdVJWbUUwQWduLW9uOHhxblEyMTl2UmpCU3RCX3dLNHNHQkRmenJvTmhtM1J0MjlBQnR2MXQxMElYMlNUUk53T3hiMmc1TC1OQmxLUGY2czNpbW12bUNx?oc=5",
+     "ts": 1790607930.0,
+     "date": "2026-09-28"
+    },
+    {
+     "topics": [],
+     "title": "Soccer-Egypt boss Hassan seeks to ease Salah tensions ahead of South Sudan qualifier",
+     "source": "Devdiscourse",
+     "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxQa0d1VzZCR2ZxbHRaX0dITHRjQmplZTJZRVRPcC15NTFvaTUtbTM3cUFicXUyZWhvRnlLeHVQWXlUN1p5OTgxVjMwLVlCb2UyTXBsYXVITm9jMXo2bzhIMXBHRXlaaW50bXU5d19JOHRoQ2Z0dEJBUzlkTTVTRzVsRllEVU1RZnpkNzEtdXktLW82cmxTRHN3LXg2NXBHVjlSUHAtWDRaM2JOUXZNaUZtNmNTc1Z3cWt1UmJCZ1J4QlBwejNoMWhBMzVucUdFSzJmQTNHRnVXdHdSbDNsSU15VNIB4AFBVV95cUxQa0d1VzZCR2ZxbHRaX0dITHRjQmplZTJZRVRPcC15NTFvaTUtbTM3cUFicXUyZWhvRnlLeHVQWXlUN1p5OTgxVjMwLVlCb2UyTXBsYXVITm9jMXo2bzhIMXBHRXlaaW50bXU5d19JOHRoQ2Z0dEJBUzlkTTVTRzVsRllEVU1RZnpkNzEtdXktLW82cmxTRHN3LXg2NXBHVjlSUHAtWDRaM2JOUXZNaUZtNmNTc1Z3cWt1UmJCZ1J4QlBwejNoMWhBMzVucUdFSzJmQTNHRnVXdHdSbDNsSU15VA?oc=5",
+     "ts": 1790607688.0,
+     "date": "2026-09-28"
+    },
+    {
+     "topics": [
+      "Ceasefire & talks"
+     ],
+     "title": "Archbishop Taban blames mediators for failed peace deals, vows neutrality in inter-party dialogue",
+     "source": "Eye Radio",
+     "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQTFVTLVdmczlJMEJQYWpQRmVsY2pDYWxkbXNGeWpsTVF6ckhvb3pWRmhPenRLcGNOWVVoaXlIYVo5SVlnenVxNUVGM1RjWGNvTjBWMHdldnJLSC0tT2gyZjZsX0FaMEIyYUxrU1Z0LTdQOGlYVjgwMTIyMGk3Z3V4WUlSaGJrWFhUTU5ycDZINDlvWnRYY1d6dk9oTDU2NkRwMVZ6M3NmMWVaRnRzS3M2Z1plY3JDd2dIZXV2UnZkTdIBvwFBVV95cUxQTFVTLVdmczlJMEJQYWpQRmVsY2pDYWxkbXNGeWpsTVF6ckhvb3pWRmhPenRLcGNOWVVoaXlIYVo5SVlnenVxNUVGM1RjWGNvTjBWMHdldnJLSC0tT2gyZjZsX0FaMEIyYUxrU1Z0LTdQOGlYVjgwMTIyMGk3Z3V4WUlSaGJrWFhUTU5ycDZINDlvWnRYY1d6dk9oTDU2NkRwMVZ6M3NmMWVaRnRzS3M2Z1plY3JDd2dIZXV2UnZkTQ?oc=5",
+     "ts": 1790604000.0,
+     "date": "2026-09-28"
+    }
+   ]
+  },
+  {
+   "name": "Syria",
+   "flag": "🇸🇾",
+   "tier": "Elevated risk",
+   "continent": "Middle East",
+   "count": 54,
+   "last7": 44,
+   "topTopics": [
+    "Displacement",
+    "Civilian harm",
+    "Accountability",
+    "Military"
+   ],
+   "articles": [
+    {
+     "topics": [],
+     "title": "Syria: Opportunity Amid Regional Adversity",
+     "source": "Middle East Institute",
+     "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTFAzZFljbEdhZ2oyaVM2WHdpck5jakVEUHk3TzlMVk0xTWRQYzhETU9HMTFVVGZoSE1lNXVleVRJMEpVVEVOMWE2djcwQ1ZwMlFtbllVNFd4VC10c1I2bFR3THZjeXhFUG5UQy1ITXhGaTUtRERfR0tFaUdKeHAyUQ?oc=5",
+     "ts": 1790634807.0,
+     "date": "2026-09-28"
+    },
+    {
+     "topics": [],
+     "title": "Syria says IS network dismantled across four provinces",
+     "source": "The New Arab",
+     "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOdlRmV1d0UUwwVnQ4VElsd3hrTklRYWRLN0pnNW5PWFVSRDVPY01WYlJKVW5jZ2Iyd0I0VVJ5Tkh3dTRveEx1S2tDUXJuRHh2V3pXVHEzck9EbG5OSkpVcXktYnZJb3pUVU56NGs1UHFOZUZNODFzLTVTRkE2djJuX3B0dTNlN1hyTUVOM9IBjAFBVV95cUxOdlRmV1d0UUwwVnQ4VElsd3hrTklRYWRLN0pnNW5PWFVSRDVPY01WYlJKVW5jZ2Iyd0I0VVJ5Tkh3dTRveEx1S2tDUXJuRHh2V3pXVHEzck9EbG5OSkpVcXktYnZJb3pUVU56NGs1UHFOZUZNODFzLTVTRkE2djJuX3B0dTNlN1hyTUVOMw?oc=5",
+     "ts": 1790614209.0,
+     "date": "2026-09-28"
+    },
+    {
+     "topics": [
+      "Accountability"
+     ],
+     "title": "DW News. . Syria’s transition after the fall of Bashar al-Assad is raising difficult questions about justice and free speech. From political activists to stand-up comedians, many are testing boundaries in the new Syria. #dwcurrentaffairs",
+     "source": "facebook.com",
+     "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNbUZFN3pMWGFIYVBXM3hTWmNINWVWaW0ySERPQlg0eW9aX2lZY3BoVGJUVUNmYWtSdDROS0NYWGdhRE1LRlBNY2FaSXk4RV9ZX2taMjMxSTJiOU5lVGI3cDJUbU45ZndPOThIaTlCeTNneGxKRlBQZlJWcmJCd1ZlQ1Q3TlpCLTVaTEtteGZlSTRKZElMS1FWZVd6Rl9pWHJITmFwQ1htazg3ZWM?oc=5",
+     "ts": 1790602225.0,
+     "date": "2026-09-28"
+    },
+    {
+     "topics": [],
+     "title": "After Assad's Fall, Syria's Muslim Brotherhood Seeks A Place In The New Order",
+     "source": "Outlook India",
+     "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNczJFcEVZV2FuZmM5Zm1PeE9FOXQ0ZDFNSnRtLTBqa1pEVnFadERhU0I3OVpxRkJ3ZE9hamo1b1ZrM2cyNks1RkNEN1B3TU5aS0MzaTg3TXdaSEhwazg4WEljUTRvMDFpZ2F4WFVrLWtGWkRUenR2b2hORms0YVJUNlM0ZUFSbHYwSktaSHFWTDZKeElrM1pRalVIVzhuTHNRclhGcS1OS2JWZ3BlZVV5eTM4c3VvbTMyRnI0UzFFTXBKNU13bXfSAcYBQVVfeXFMTXMyRXBFWVdhbmZjOWZtT3hPRTl0NGQxTUp0bS0wamtaRFZxWnREYVNCNzlacUZCd2RPYWpqNW9WazNnMjZLNUZDRDdQd01OWktDM2k4N013WkhIcGs4OFhJY1E0bzAxaWdheFhVay1rRlpEVHp0dm9oTkZrNGFSVDZTNGVBUmx2MEpLWkhxVkw2SnhJazNaUWpVSFc4bkxzUXJYRnEtTktiVmdwZWVVeXkzOHN1b20zMkZyNFMxRU1wSjVNd213?oc=5",
+     "ts": 1790595637.0,
+     "date": "2026-09-28"
+    },
+    {
+     "topics": [
+      "Displacement"
+     ],
+     "title": "Syrian Economy Faces Pressure From Refugee Returns - Enab Baladi",
+     "source": "Enab Baladi",
+     "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPcVkxcHFjaUdmZlN6dXAwVFlyYk8wNHVXdXkzSng5ZHNzWi1PaUItZ3Qwc2hCR01NTFlLbjREalYxRDNicGFEa05yRERVeGRMSzhnQ1YzRWZNckZrdjFCZmltcTdOVGF6S3pkYzcxTXRqbkdrYmE5dEJxVUtwT05jR3JTOXJ6VVBUZW9CNl9FOTZmNlBmeW53M0x3Y0ZNbzJa0gGmAUFVX3lxTFBldnlTc2VGc3VXbUl5bHdUNERQT2FaYi1GWTdfUDhEblB2SEhwUlZrSXhjdzNPVlJRc1ZqbkREOWVPMUdib0NkeTdRZGNiY3hYRGpHdFBGRzhSbjBSZFZ0aWo4ZTcwRmdHcVR5TFlST09nbjJuRUJJZTNmQTRlTFQwYk1MSWc5aEFZS2lvd2Q5QzNrb0hzbEdIckFtWjc3SGU4UURHMWc?oc=5",
+     "ts": 1790593102.0,
+     "date": "2026-09-28"
+    },
+    {
+     "topics": [
+      "Displacement"
+     ],
+     "title": "308 Syrian families leave displacement camps in voluntary return convoy",
+     "source": "وكالة الأنباء السورية – سانا",
+     "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE1OVjdkNHItenhWOHM0U0R3RXJ0enFmbmFxY25Wem44Y3RkclBHUHNFVUZkQ21XaTloV0hhcTJac1hvN0RaRVFqOA?oc=5",
+     "ts": 1790580473.0,
+     "date": "2026-09-28"
+    }
+   ]
+  },
+  {
+   "name": "Lebanon",
+   "flag": "🇱🇧",
+   "tier": "Elevated risk",
+   "continent": "Middle East",
+   "count": 98,
+   "last7": 94,
+   "topTopics": [
+    "Military",
+    "Ceasefire & talks",
+    "Civilian harm",
+    "Accountability"
+   ],
+   "articles": [
+    {
+     "topics": [],
+     "title": "Strategic Momentum in Türkiye-Lebanon Relations",
+     "source": "politicstoday.org",
+     "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE56dG1NYkxiVkJoMlU2ZmotQVNXdVVFUDd1QUdRdXEwNk5DYlg0NUhjVi1vNHczbWYyakhDaGRDQzF3Ri1OXzljWVdlaGJ6aWZLbG82T18wRTExd1Nudno2dTFfQm1nUHFESXNEdlZRWVlHQzhXMHhUVmFzVnVUb0k?oc=5",
+     "ts": 1790657842.0,
+     "date": "2026-09-29"
+    },
+    {
+     "topics": [],
+     "title": "Lebanese Forces chief says Hezbollah arms prolong Israeli presence in the south",
+     "source": "Arab News",
+     "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNbWpRUFdWNFpNcDFrYmstUC0xMW9WUllONUp1cndvVVROUThHTlhKbWttWExabkJwSGNReXBvVTJJYWRIQVpSSkF1M2ZOQzhhTjdrM2xnWEx2MG51T19Remd6X25ocGFzeHdkQS1ud3Z4aE8wcnZDX2pWZXlNOWV4MUx0aGphb2g5Qk5ScUdta2tQNGNZX1VHTlpUYlc4b0F3cGRrV0FvVkVYeWVfRXEtN041UjJDVTlDR2ZIS2R1SWVMQQ?oc=5",
+     "ts": 1790657336.0,
+     "date": "2026-09-29"
+    },
+    {
+     "topics": [
+      "Ceasefire & talks"
+     ],
+     "title": "Lebanon's Aoun meets Rubio in Washington amid stalled peace deal with Israel",
+     "source": "thenationalnews.com",
+     "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQTW10N0xPV2YzVGZVOEVYZ3lWNl9YcnpiWldBbzRWU2otSzJycVEtRnV4ZkRhSm5ZdXhYeWFURDk3c3Vtdk1ILTE0YmVQVHIzSHJjNWIzWm9NUm1JS3JlVHg3N1VfdF9GM05rSVRIUTRxVzZLR1pMVUdpYjAtOWF3OA?oc=5",
+     "ts": 1790652694.0,
+     "date": "2026-09-29"
+    },
+    {
+     "topics": [
+      "Ceasefire & talks"
+     ],
+     "title": "Lebanon urges progress on Israel deal in talks with Rubio",
+     "source": "Malay Mail",
+     "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxObG40V2paVkhpcUZfdF9Pdzg5WXYwMTBqU3N3QVhZSDZmQWRfUlFDREs1Rk12Mm5fQjNfbXpEZFNJMTdQMzl0c0hRSlBZU2xWeXpLTzF1MnJDMGZQamlDSU9fcmZfTTlXaXI2VW5xOE9CdjBEbDR4YXF0V2stZldRaUd1RVo1WnhkclBkV0xGX0tpdEtMU25kaThVMkFtUkF4Mm45eDBaZ0NCV3BSME9XLXl5RVdlamfSAbcBQVVfeXFMTmxuNFdqWlZIaXFGX3RfT3c4OVl2MDEwalNzd0FYWUg2ZkFkX1JRQ0RLNUZNdjJuX0IzX216RGRTSTE3UDM5dHNIUUpQWVNsVnl6S08xdTJyQzBmUGppQ0lPX3JmX005V2lyNlVucThPQnYwRGw0eGFxdFdrLWZXUWlHdUVaNVp4ZHJQZFdMRl9LaXRLTFNuZGk4VTJBbVJBeDJuOXgwWmdDQldwUjBPVy15eUVXZWpn?oc=5",
+     "ts": 1790646585.0,
+     "date": "2026-09-29"
+    },
+    {
+     "topics": [],
+     "title": "Lebanon’s prime minister urges implementation of trilateral framework to ensure Israeli withdrawal",
+     "source": "Anadolu Ajansı",
+     "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNTTRqcVk5dnFQZVh2ZVBhem9jTS1HazVfakxOQUVISndJOHlYT2hPUGFKZlRvNnZ3WEVONDZ4cDhqVnIzVTJpUE9vejNzVjk4TnZRWEFfeU4xUGpLaGRKal9mbXA1UUVjQ0Z6RFQ2VkdmamtVSjdjaEgyN1Roa2NWSXFPWWFRRkZKOFhhbmtnYTFFS2NCY0NPeU9XcTdRdExHQkx4SmdLeGt3TnYyV09oNmNZUzJnN1BzN0phQnREQ0FmOElTVkY2dE1BcU5CUm1nbTNyTlBB?oc=5",
+     "ts": 1790643273.0,
+     "date": "2026-09-29"
+    },
+    {
+     "topics": [
+      "Military"
+     ],
+     "title": "Hezbollah chief vows to continue resistance as Israeli strikes hit S. Lebanon",
+     "source": "Global Times",
+     "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBIUmpsZ01SbkwwSEs2MmFlQ0hRWmxvMXB2TEZIeW00eTVPemtYOF9JYTE4ZGZ2eUpqSzQ3eDlKSkZrMWdTRlRQYVBtc1c2S19DR3ZpMVJzdi1GSmZkZm5XNmVB?oc=5",
+     "ts": 1790641560.0,
+     "date": "2026-09-29"
+    }
+   ]
+  },
+  {
+   "name": "Taiwan",
+   "flag": "🇹🇼",
+   "tier": "Elevated risk",
+   "continent": "Asia",
+   "count": 81,
+   "last7": 73,
+   "topTopics": [
+    "Ceasefire & talks",
+    "Military",
+    "Civilian harm",
+    "Accountability"
+   ],
+   "articles": [
+    {
+     "topics": [],
+     "title": "Taiwan diplomat seeks stronger US support as China increases pressure",
+     "source": "Taiwan News",
+     "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE40N0hpYlRZNEY4cFV3NFJDWEw3TDN6MjdLXzcxWHRzZlBleWNoUExwYXZfUGt0TGlmV2I1VWhJSkJGUDdZWjhhN0s5NXRtaVBjeU81QmRBaUU?oc=5",
+     "ts": 1790650873.0,
+     "date": "2026-09-29"
+    },
+    {
+     "topics": [
+      "Ceasefire & talks"
+     ],
+     "title": "Trump-Xi Summit: Trade Truce Holds, but Taiwan & Security Divides Remain",
+     "source": "Open Magazine",
+     "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNdDJvVmxOcWtwOGNIcFN4aUdta2tid0NfeFBGeDJKZnJQTFREQU1fdTVGVmZKcGYyN1hFeWM3XzExSGh4bnZMVUdQWHpqaEYzS0ZXeXk3RUNjRFNMc0NNVVl5aFpySHh2MVg3U3M2VDM2d1ZMUlRMek15Y205clV2dHNUZGpGb1RmTnhKZDNZaU5HTzVkbWMzTnRoOExjemxJMER2VA?oc=5",
+     "ts": 1790647757.0,
+     "date": "2026-09-29"
+    },
+    {
+     "topics": [],
+     "title": "Taiwan reports 3 PLA aircraft, 6 PLAN vessels operating near island",
+     "source": "KalingaTV",
+     "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQMk5EQ2VPLWlrNzhBSXR4bEJLTmE2ck9hNGFKMG5mQnl5eTFGNFNJZFdRSG00WFp1eWlEanJ5Zm5pNURtV1paRjVzWTVJVGdiQlp1SUVYZWFoSlo5NUJEOVpDYzdYNTdHZjJaMmpNeWhSRXg1YVdBWWU5RV9yelRjQmhNX2ZaM3JfRmdnVHBoSFlfRHBjd0NUN0NVNA?oc=5",
+     "ts": 1790646658.0,
+     "date": "2026-09-29"
+    },
+    {
+     "topics": [],
+     "title": "US officials deny there are plans to sell weapons to China",
+     "source": "ABC News - Breaking News, Latest News and Videos",
+     "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxORzlLVVJPTzJjczJGNkhtN1BSWFB1NTkzY2FrcExxdGctekxGbUU4ZmlGWUozMkVSRkc4ZXJLeHRRUEdwaTRreE91WE40bURITkJ5di00cGJfT0ktY3kxRTM2N3lKSl9vQm82ZXM2VzZ3NnNsVGxhM1R4QURrblpIWFNoNFpvanBrSzdoUjNzNnhRczMx0gGaAUFVX3lxTE1tMXFvVmRNZllvdDZxQWMtRnN3elA2UHh2endMRmx3RzBEcWgyN2g0NjJNYnhhQ1lNbWZDMVpyRnRZTW9TOG1fM1IydG1KRUpSZGFsQ19rVHo5dzJqVVc1a09sRmtlTDJubTd6NE14RUNlYkUzS19OTzlKeFdzVFlpWk81UzFlZG9vaU9TZUdGb2l3S2VkOFJGOVE?oc=5",
+     "ts": 1790627219.0,
+     "date": "2026-09-28"
+    },
+    {
+     "topics": [],
+     "title": "WATCH: Trump says Perdue 'was probably talking about Taiwan' in saying Trump offered Xi arms sales",
+     "source": "PBS",
+     "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPZTlGNUpQOHpVNTdkVXliUXR4WTNZbWVvOGNyMnR6cjcxdnEwRjRMX0ZoRkFXTTY2Nld5d0JqOHNTU3FVMG5takJfUFN1RS1tdGZKamVrR1FLLVNrS3o5UHhMcWFjcGZfV0dZUk1BXzVhSnJuMExYbFlQWGtNUHlfbVRiZF85UVltNzB0M3ZtdW4tcFdCTEhEOE9xNzc1Q1N1NFgwSDJEOWdSYWEyRktEUF9Jd0VpMWlZSGdrSUhkUlBncGU1eE5zUThXWUJoUdIB0wFBVV95cUxNeXdtME9sYzBTcEhXd3Q2dzZnSnZZTV9CWFBnVGg4bDRTdmREcFpvRWJIZklOY0txOFpLZEN5YlNidi1GMDdyX2JNWS1hcDY3aHl4cnA0ZGhnWlF5YVJJVnBHVU9saUt1cGc2WWNGUnRwRlJpS0ZVZWx1TDlmelpyMVFIcG5JR1JlX3c5SVRFVnRrVDNoV25uY1NDSjBCOHZXc0lOUWFITmxBX005R25MbnpvOHRSLV9EU2owSU9hTmoyY2s4dEh3YW4wOUQxSjJaU3ZV?oc=5",
+     "ts": 1790625888.0,
+     "date": "2026-09-28"
+    },
+    {
+     "topics": [],
+     "title": "'Unsettling to American partners': Trump’s offer to sell arms to China is an admission he doesn’t take its security threats seriously, experts warn",
+     "source": "Fortune",
+     "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQQmZNTFlENjFBSWdKUXE3VktLMFhINWdyOEdkMjRRSUhHN2VZd3E2ZndRM3hLMEpkX054Y1drRWFJWkp5XzAyMVQyUlBzMEt0NDB3SDlPbi1OR0hjU2tiaGpfVTc1bENGakMta2ZZalZKYTd1RlNkLXNrOXZjVUhaeGJYMm8yR1hnN2dIRmdoa1Y0VF92R0VPQ2k0X09XWEMxNVYzamc0Q2UwOGNpUGRlUVJxUWN6a3o1ZXdDMmx2anQ?oc=5",
+     "ts": 1790623980.0,
+     "date": "2026-09-28"
+    }
+   ]
+  }
+ ]
+}
