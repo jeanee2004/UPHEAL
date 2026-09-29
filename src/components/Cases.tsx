@@ -1,16 +1,16 @@
 import { useMemo, useState } from 'react'
 import { Eyebrow } from './Glyph'
 import { useStored } from '../lib'
-import { appProgress, blankCase, Case, daysTo, docProgress, flags, nextItem, sampleCases, StageId, STAGES } from '../data/caseModel'
+import { appProgress, blankCase, Case, daysTo, docProgress, flags, nextItem, CaseStore, CASES_KEY, casesInit, StageId, STAGES } from '../data/caseModel'
 import { casesCsv } from '../data/caseExport'
 import CaseDetail from './CaseDetail'
+import Folders from './Folders'
 import { input, labelCls, Meter, RelDate, SecCells, StageChip } from './caseUi'
 
-type Store = { cases: Case[]; view: 'table' | 'board' }
 const card = 'rounded-2xl border border-line bg-card'
 
 export default function Cases() {
-  const [st, setSt] = useStored<Store>('upheal.cases.v1', () => ({ cases: sampleCases(), view: 'table' }))
+  const [st, setSt] = useStored<CaseStore>(CASES_KEY, casesInit)
   const [openId, setOpenId] = useState<string | null>(null)
   const [q, setQ] = useState(''), [stage, setStage] = useState<'all' | StageId>('all'), [only, setOnly] = useState(false)
   const [adding, setAdding] = useState(false), [nf, setNf] = useState({ alias: '', nationality: '', lang: '' })
@@ -41,7 +41,7 @@ export default function Cases() {
       <div className="reveal grid gap-6 md:grid-cols-2 md:items-end">
         <div>
           <Eyebrow n="05" label="Heal · Case tracker" icon="footprints" />
-          <h2 className="mt-4 text-[clamp(44px,7vw,104px)] font-medium leading-[0.95] tracking-[-0.045em]">Every life, <span className="font-serif font-normal italic tracking-tight">at a glance</span></h2>
+          <h2 className="mt-4 font-display text-[clamp(56px,9vw,132px)] font-extrabold uppercase leading-[0.88]">Every life, <span className="font-serif text-[1.04em] font-normal normal-case italic tracking-normal">at a glance</span></h2>
         </div>
         <p className="max-w-md text-[17px] leading-relaxed text-mute md:justify-self-end">Applicants fill in their own 난민인정신청서. You keep track: who is where in the process, what has been discussed, which documents are still missing, and how far each form has been checked.</p>
       </div>
@@ -63,7 +63,7 @@ export default function Cases() {
               <input aria-label="Search cases" className={`${input} max-w-[240px]`} placeholder="Search alias, nationality, language…" value={q} onChange={(e) => setQ(e.target.value)} />
               <select aria-label="Stage filter" className={`${input} max-w-[190px]`} value={stage} onChange={(e) => setStage(e.target.value as 'all' | StageId)}><option value="all">All stages</option>{STAGES.map((s) => <option key={s.id} value={s.id}>{s.en} · {s.ko}</option>)}</select>
               <label className="flex cursor-pointer items-center gap-2 rounded-xl border border-line bg-surface px-3 py-2.5 text-[13px]"><input type="checkbox" checked={only} onChange={(e) => setOnly(e.target.checked)} className="accent-[#EDB021]" />Needs attention</label>
-              <div role="group" aria-label="View" className="ml-auto flex gap-1 rounded-full bg-surface p-1">{(['table', 'board'] as const).map((v) => <button key={v} aria-pressed={st.view === v} onClick={() => setSt((p) => ({ ...p, view: v }))} className={`rounded-full px-4 py-1.5 text-[12.5px] capitalize ${st.view === v ? 'bg-fg text-onfg' : 'hover:bg-fg/10'}`}>{v === 'table' ? 'List' : 'Board'}</button>)}</div>
+              <div role="group" aria-label="View" className="ml-auto flex gap-1 rounded-full bg-surface p-1">{(['folders', 'table', 'board'] as const).map((v) => <button key={v} aria-pressed={st.view === v} onClick={() => setSt((p) => ({ ...p, view: v }))} className={`rounded-full px-4 py-1.5 text-[12.5px] capitalize ${st.view === v ? 'bg-fg text-onfg' : 'hover:bg-fg/10'}`}>{v === 'table' ? 'List' : v === 'board' ? 'Board' : 'Folders'}</button>)}</div>
               <button onClick={csv} className="pill border border-ink/25 px-4 py-2 text-[12px] hover:bg-fg hover:text-onfg">Export .csv ↓</button>
               <button onClick={() => setAdding((v) => !v)} className="pill bg-key px-4 py-2 text-[12px] text-deep hover:bg-fg hover:text-onfg">{adding ? 'Cancel' : '+ New case'}</button>
             </div>
@@ -81,6 +81,8 @@ export default function Cases() {
               <p className="flex flex-wrap items-center gap-3 rounded-2xl bg-key/10 px-4 py-3 font-mono text-[10.5px] uppercase tracking-wider text-keydeep">Sample cases shown so you can see the layout.
                 <button onClick={() => setSt((p) => ({ ...p, cases: p.cases.filter((c) => !c.sample) }))} className="rounded-full border border-key/50 px-3 py-1 hover:bg-key hover:text-deep max-md:py-2.5">Remove samples</button></p>
             )}
+
+            {st.view === 'folders' && <Folders cases={shown.map((r) => r.c)} open={setOpenId} />}
 
             {/* list */}
             {st.view === 'table' && (

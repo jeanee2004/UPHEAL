@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react'
-import PixelEdge from './PixelEdge'
+import Steps from './Steps'
 import { burst, fmtTime } from '../lib'
 import briefing from '../data/briefing.json'
 
@@ -25,10 +25,11 @@ export default function Hero({ updated }: { updated: string }) {
         if (!l) return
         const b = l.getBoundingClientRect()
         const k = Math.max(0, 1 - Math.hypot(e.clientX - (b.left + b.width / 2), e.clientY - (b.top + b.height / 2)) / 220)
-        l.style.fontVariationSettings = `'wght' ${Math.round(420 + k * 380)}`; l.style.transform = `translateY(${-k * 14}px)`
+        l.style.fontVariationSettings = `'wght' ${Math.round(640 + k * 260)}`; l.style.transform = `translateY(${-k * 14}px)`
       })
     }
-    const loop = () => { x += (tx - x) * 0.05; y += (ty - y) * 0.05; el.style.setProperty('--mx', x.toFixed(4)); el.style.setProperty('--my', y.toFixed(4)); id = requestAnimationFrame(loop) }
+    let last = performance.now()
+    const loop = (t: number) => { const k = 1 - Math.exp(-(t - last) / 70); last = t; x += (tx - x) * k; y += (ty - y) * k; el.style.setProperty('--mx', x.toFixed(4)); el.style.setProperty('--my', y.toFixed(4)); id = requestAnimationFrame(loop) }
     id = requestAnimationFrame(loop)
     el.addEventListener('pointermove', move)
     return () => { cancelAnimationFrame(id); el.removeEventListener('pointermove', move) }
@@ -45,8 +46,7 @@ export default function Hero({ updated }: { updated: string }) {
   }, [reduced])
 
   const go = (id: string) => (e: React.MouseEvent) => {
-    e.preventDefault(); burst(e.clientX, e.clientY)
-    document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' })
+    e.preventDefault(); burst(e.clientX, e.clientY, () => document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' }))
   }
 
   return (
@@ -71,9 +71,9 @@ export default function Hero({ updated }: { updated: string }) {
         <p className="font-mono text-[11px] uppercase tracking-[0.12em] text-cream/75 md:text-xs md:tracking-[0.18em]">UPHEAL · Uncovering pathways, healing every affected life</p>
         <h1 className="mt-4 select-none">
           <span className="block font-serif text-[clamp(44px,8.6vw,128px)] italic leading-[0.95] tracking-tight text-cream">Uphill,</span>
-          <span className="block font-sans text-[clamp(52px,10.5vw,160px)] font-medium leading-[0.9] tracking-[-0.05em] text-cream/95" aria-label="together">
+          <span className="block font-display text-[clamp(80px,13.5vw,210px)] font-black uppercase leading-[0.84] text-cream" aria-label="together">
             {WORD.map((c, i) => (
-              <span key={i} ref={(n) => { letters.current[i] = n }} aria-hidden className="inline-block transition-[font-variation-settings,transform] duration-300 ease-out" style={{ fontVariationSettings: "'wght' 420" }}>{c}</span>
+              <span key={i} ref={(n) => { letters.current[i] = n }} aria-hidden className="inline-block transition-[font-variation-settings,transform] duration-300 ease-out" style={{ fontVariationSettings: "'wght' 640" }}>{c}</span>
             ))}
           </span>
         </h1>
@@ -96,7 +96,8 @@ export default function Hero({ updated }: { updated: string }) {
         </div>
         <p className="max-w-[260px] text-right font-mono text-[9.5px] uppercase leading-relaxed tracking-widest text-cream/60 md:max-w-none"><span className="hidden md:inline">Data updated {updated}</span></p>
       </div>
-      <PixelEdge cols={40} rows={2} seed={11} />
+      <div aria-hidden className="pointer-events-none absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-[rgb(var(--paper))] to-transparent" />
+      <Steps n={30} walk className="absolute inset-x-5 bottom-3 overflow-hidden text-cream md:inset-x-8" />
     </section>
   )
 }

@@ -3,12 +3,15 @@
  * The applicant fills in their own form; the lawyer tracks consultations, documents and section-by-section progress.
  */
 import { SECTIONS } from './refugeeForm'
+import countries from './countries.json'
+import type { Article } from '../lib'
 
 export type StageId = 'intake' | 'consult' | 'docs' | 'drafting' | 'review' | 'filed' | 'interview' | 'decision'
 export type SecStatus = 'todo' | 'client' | 'review' | 'fix' | 'ok'
 export type DocStatus = 'needed' | 'requested' | 'received' | 'translated' | 'sealed'
 export type Owner = 'client' | 'lawyer' | 'third'
 
+export type FileItem = Article & { note: string }
 export type Consult = { id: string; date: string; mode: string; with: string; summary: string; nextText?: string; nextDate?: string }
 export type Action = { id: string; text: string; due?: string; done: boolean }
 export type Doc = { id: string; name: string; cat: string; status: DocStatus; owner: Owner; due?: string; note?: string }
@@ -19,6 +22,7 @@ export type Case = {
   sections: Record<string, { status: SecStatus; note?: string }>
   rules: Record<string, boolean>; att: Record<string, boolean>
   notes: string; updated: string
+  region?: string; files?: FileItem[]   // area inside the country · articles filed to this person's folder
 }
 
 export const STAGES: { id: StageId; en: string; ko: string }[] = [
@@ -118,7 +122,7 @@ export function nextItem(c: Case): { date: string; label: string } | null {
 }
 
 /* ---------------------------------------------------------------- samples (clearly marked) */
-export function sampleCases(): Case[] {
+function baseSamples(): Case[] {
   const S = (o: Record<string, SecStatus>) => Object.fromEntries(Object.entries(o).map(([k, v]) => [k, { status: v }]))
   const d = (name: string, cat: string, status: DocStatus, owner: Owner = 'client', due?: string): Doc => ({ id: uid(), name, cat, status, owner, due })
   return [
@@ -136,3 +140,29 @@ export function sampleCases(): Case[] {
       consults: [], actions: [{ id: uid(), text: 'Book first consultation (applicant is a child — parent attends)', due: plus(2), done: false }], docs: [], sections: {} }),
   ]
 }
+
+/* ---------------------------------------------------------------- folders: continent › country › region › person */
+export const CASES_KEY = 'upheal.cases.v2'
+export type CaseStore = { cases: Case[]; view: 'folders' | 'table' | 'board' }
+const byLen = [...countries.countries].sort((a, b) => b.name.length - a.name.length)
+/** match a free-text nationality to a watchlist country (exact, then contained) */
+export const canon = (nat: string) => { const n = nat.trim().toLowerCase(); return n ? byLen.find((c) => c.name.toLowerCase() === n) ?? byLen.find((c) => n.includes(c.name.toLowerCase())) : undefined }
+export const continentOf = (nat: string) => canon(nat)?.continent ?? 'Unsorted'
+export const COUNTRY_NAMES = countries.countries.map((c) => c.name)
+
+const filesFor = (nat: string): FileItem[] => (countries.countries.find((c) => c.name === nat)?.articles ?? []).slice(0, 2).map((a) => ({ source: a.source, title: a.title, excerpt: '', url: a.url, image: '', date: a.date, region: continentOf(nat), topics: a.topics, note: '' }))
+export function sampleCases(): Case[] {
+  const reg: Record<string, string> = { 'A-01': 'Mandalay', 'B-02': 'Darfur', 'C-03': 'Kharkiv', 'D-04': 'Yangon' }
+  const extra = blankCase('D-04', { sample: true, nationality: 'Myanmar', lang: 'Burmese', interpreter: true, stage: 'consult', dob: '1996-11-02' })
+  return [...baseSamples(), extra].map((c) => ({ ...c, region: reg[c.alias], files: ['A-01', 'B-02'].includes(c.alias) ? filesFor(c.nationality) : [] }))
+}
+/** keeps the user's saved cases from v1 and opens on the new folder view */
+export const casesInit = (): CaseStore => {
+  try { const o = JSON.parse(localStorage.getItem('upheal.cases.v1') || 'null'); if (o?.cases) return { ...o, view: 'folders' } } catch { /* ignore */ }
+  return { cases: sampleCases(), view: 'folders' }
+}
+/** file / un-file an article in one person's folder */
+export const toggleFile = (s: CaseStore, id: string, f: Article): CaseStore => ({
+  ...s, cases: s.cases.map((c) => (c.id !== id ? c : { ...c, updated: new Date().toISOString(), files: (c.files ?? []).some((x) => x.url === f.url) ? (c.files ?? []).filter((x) => x.url !== f.url) : [{ ...f, note: '' }, ...(c.files ?? [])] })),
+})
+export const patchFiles = (s: CaseStore, id: string, fn: (f: FileItem[]) => FileItem[]): CaseStore => ({ ...s, cases: s.cases.map((c) => (c.id === id ? { ...c, files: fn(c.files ?? []) } : c)) })

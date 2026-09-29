@@ -4,7 +4,8 @@ import data from '../data/countries.json'
 import news from '../data/articles.json'
 import dsp from '../data/displacement.json'
 import Freshness from './Freshness'
-import { burst, fmtDate } from '../lib'
+import { burst, fmtDate, useStored } from '../lib'
+import { CASES_KEY, CaseStore, casesInit, toggleFile } from '../data/caseModel'
 import TopicChips from './TopicChips'
 
 type Country = (typeof data.countries)[number]
@@ -18,7 +19,7 @@ const Pills = ({ label, items, value, set, count }: { label: string; items: read
     <span className="hidden w-20 shrink-0 font-mono text-[10px] uppercase tracking-widest text-mute sm:block">{label}</span>
     <div role="tablist" aria-label={label} className="flex max-w-full gap-1 overflow-x-auto rounded-full bg-surface p-1 shadow-sm">
       {items.map((t) => (
-        <button key={t} role="tab" aria-selected={value === t} onClick={(e) => { set(t); burst(e.clientX, e.clientY) }} className={`shrink-0 rounded-full px-4 py-2 text-[13px] transition-colors ${value === t ? 'bg-fg text-onfg' : 'hover:bg-ink/5'}`}>
+        <button key={t} role="tab" aria-selected={value === t} onClick={(e) => burst(e.clientX, e.clientY, () => set(t))} className={`shrink-0 rounded-full px-4 py-2 text-[13px] transition-colors ${value === t ? 'bg-fg text-onfg' : 'hover:bg-ink/5'}`}>
           {t}<sup className="ml-0.5 text-[9px] opacity-70">{count(t)}</sup>
         </button>
       ))}
@@ -27,6 +28,9 @@ const Pills = ({ label, items, value, set, count }: { label: string; items: read
 )
 
 export default function Countries() {
+  const [store, setStore] = useStored<CaseStore>(CASES_KEY, casesInit)
+  const [activeId, setActive] = useStored<string>('upheal.activeCase', () => '')
+  const folder = store.cases.find((c) => c.id === activeId) ?? store.cases[0]
   const [tier, setTier] = useState<string>('All')
   const [cont, setCont] = useState<string>('All')
   const match = (c: Country, t = tier, k = cont) => (t === 'All' || c.tier === t) && (k === 'All' || c.continent === k)
@@ -48,8 +52,8 @@ export default function Countries() {
       <div className="reveal grid gap-6 md:grid-cols-2 md:items-end">
         <div>
           <Eyebrow n="02" label="Uphill · Watchlist" icon="boat" />
-          <h2 className="mt-4 text-[clamp(44px,7vw,104px)] font-medium leading-[0.95] tracking-[-0.045em]">
-            The climb, <span className="font-serif font-normal italic tracking-tight">country by country</span>
+          <h2 className="mt-4 font-display text-[clamp(56px,9vw,132px)] font-extrabold uppercase leading-[0.88]">
+            The climb, <span className="font-serif text-[1.04em] font-normal normal-case italic tracking-normal">country by country</span>
           </h2>
         </div>
         <div className="md:justify-self-end"><p className="max-w-md text-[17px] leading-relaxed text-mute">
@@ -108,6 +112,7 @@ export default function Countries() {
                   </p>
                 </div>
               </div>
+              <label className="flex items-center gap-2 font-mono text-[10px] uppercase tracking-widest text-mute">File into<select aria-label="Folder to file into" className="border border-line bg-surface px-2 py-2 text-[13px] normal-case tracking-normal text-ink" value={folder?.id ?? ''} onChange={(e) => setActive(e.target.value)}>{store.cases.length === 0 && <option value="">—</option>}{store.cases.map((c) => <option key={c.id} value={c.id}>{c.alias}{c.region ? ` · ${c.region}` : ''}</option>)}</select></label>
               <a href={`https://news.google.com/search?q=${encodeURIComponent(cur.name + ' war refugees')}`} target="_blank" rel="noopener noreferrer" className="pill border border-ink/20 text-[13px] hover:bg-fg hover:text-onfg">More on {cur.name} ↗</a>
             </div>
             <div className="relative flex flex-wrap items-center gap-3 border-b border-line py-4">
@@ -131,8 +136,8 @@ export default function Countries() {
             })()}
             <ul className="relative">
               {cur.articles.map((a) => (
-                <li key={a.url} className="border-b border-line last:border-0">
-                  <a href={a.url} target="_blank" rel="noopener noreferrer" data-cursor="Read ↗" className="group -mx-3 grid grid-cols-[1fr_auto] items-start gap-4 rounded-2xl px-3 py-5 transition-colors duration-300 hover:bg-surface">
+                <li key={a.url} className="flex items-start gap-3 border-b border-line last:border-0">
+                  <a href={a.url} target="_blank" rel="noopener noreferrer" data-cursor="Read ↗" className="group -mx-3 min-w-0 flex-1 grid grid-cols-[1fr_auto] items-start gap-4 rounded-2xl px-3 py-5 transition-colors duration-300 hover:bg-surface">
                     <div>
                       <p className="font-mono text-[10px] uppercase tracking-[0.12em] text-mute"><span className="text-ink">{a.source}</span> · {fmtDate(a.date)}</p>
                       <h4 className="mt-2 text-[19px] font-medium leading-snug tracking-[-0.015em] md:text-[21px]">{a.title}</h4>
@@ -140,6 +145,9 @@ export default function Countries() {
                     </div>
                     <span className="mt-1 text-xl transition-transform duration-300 group-hover:-translate-y-1 group-hover:translate-x-1">↗</span>
                   </a>
+                  {(() => { const filed = !!folder?.files?.some((f) => f.url === a.url); return (
+                    <button disabled={!folder} onClick={() => folder && setStore((s) => toggleFile(s, folder.id, { source: a.source, title: a.title, excerpt: '', url: a.url, image: '', date: a.date, region: cur.continent, topics: a.topics }))} aria-pressed={filed} title={folder ? `File in ${folder.alias}` : 'Create a person folder in Reports first'}
+                      className={`pill mt-5 shrink-0 px-3 py-2 text-[10.5px] ${filed ? 'bg-key text-deep' : 'border border-ink/30 hover:bg-fg hover:text-onfg'} disabled:opacity-40`}>{filed ? '✓ Filed' : '+ File'}</button>) })()}
                 </li>
               ))}
             </ul>

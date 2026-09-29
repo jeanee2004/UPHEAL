@@ -1,6 +1,6 @@
 import { useEffect, useRef } from 'react'
 
-type Kind = 'suitcase' | 'backpack' | 'bundle' | 'vest'
+type Kind = 'suitcase' | 'backpack' | 'bundle' | 'vest' | 'foot'
 type Piece = { kind: Kind; x: number; y: number; vx: number; vy: number; s: number; rot: number; vr: number; col: string; life: number; amb: boolean; ph: number }
 
 const KEY = '237,176,33'
@@ -25,6 +25,7 @@ const SHAPES: Record<Kind, (c: CanvasRenderingContext2D, s: number) => void> = {
     c.beginPath(); c.arc(0, -s * 0.62, s * 0.3, 0, 7); c.fill()
     cut(c, s * 0.1, () => { c.beginPath(); c.moveTo(-s * 0.55, -s * 0.15); c.quadraticCurveTo(0, s * 0.35, s * 0.55, -s * 0.15); c.stroke(); c.beginPath(); c.moveTo(-s * 0.7, s * 0.3); c.quadraticCurveTo(0, s * 0.85, s * 0.7, s * 0.3); c.stroke() })
   },
+  foot(c, s) { c.beginPath(); c.ellipse(0, -s * 0.5, s * 0.55, s * 0.85, 0, 0, 7); c.fill(); c.beginPath(); c.ellipse(0, s * 0.85, s * 0.45, s * 0.5, 0, 0, 7); c.fill() },
   vest(c, s) {   // life jacket
     c.beginPath(); c.moveTo(-s * 0.95, -s * 0.8); c.lineTo(-s * 0.4, -s * 0.8); c.quadraticCurveTo(0, -s * 0.2, s * 0.4, -s * 0.8); c.lineTo(s * 0.95, -s * 0.8); c.lineTo(s * 0.8, s * 0.9); c.lineTo(-s * 0.8, s * 0.9); c.closePath(); c.fill()
     cut(c, s * 0.1, () => { c.beginPath(); c.moveTo(0, -s * 0.15); c.lineTo(0, s * 0.9); c.stroke(); c.beginPath(); c.moveTo(-s * 0.85, s * 0.2); c.lineTo(s * 0.85, s * 0.2); c.stroke() })
@@ -66,7 +67,7 @@ export default function Journey() {
         const a = -Math.PI / 2 + (Math.random() - 0.5) * 1.6, sp = 2.6 + Math.random() * 2.8, kind = KINDS[(Math.random() * KINDS.length) | 0]
         pcs.push({ kind, x, y, vx: Math.cos(a) * sp, vy: Math.sin(a) * sp, s: 11 + Math.random() * 7, rot: (Math.random() - 0.5) * 0.8, vr: (Math.random() - 0.5) * 0.12, col: kind === 'vest' ? KEY : fgRgb(), life: 1, amb: false, ph: 0 })
       }
-      if (!id) { last = performance.now(); id = requestAnimationFrame(loop) }
+      if (!id) { last = performance.now(); loop(last) }   // draw now, don't wait for the next frame
     }
     addEventListener('upheal:burst', onBurst)
     return () => { if (id) cancelAnimationFrame(id); removeEventListener('resize', resize); removeEventListener('upheal:burst', onBurst) }

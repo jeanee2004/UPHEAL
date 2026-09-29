@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react'
+import { useEffect, useRef, useSyncExternalStore } from 'react'
 
 export type Article = {
   source: string
@@ -56,8 +56,11 @@ export function useRafLoop(cb: (t: number) => void, active = true) {
   }, [active])
 }
 
-export const burst = (x: number, y: number) =>
+/** Draws the burst first, then runs `then` (heavy state updates) after that frame has been painted. */
+export const burst = (x: number, y: number, then?: () => void) => {
   window.dispatchEvent(new CustomEvent('upheal:burst', { detail: { x, y } }))
+  if (then) requestAnimationFrame(() => setTimeout(then, 0))
+}
 
 export async function sha256(data: ArrayBuffer | string): Promise<string> {
   const buf = typeof data === 'string' ? new TextEncoder().encode(data) : data
@@ -68,18 +71,20 @@ export async function sha256(data: ArrayBuffer | string): Promise<string> {
 export const fmtBytes = (n: number) =>
   n < 1024 ? `${n} B` : n < 1048576 ? `${(n / 1024).toFixed(1)} KB` : `${(n / 1048576).toFixed(1)} MB`
 
-/** useState persisted in localStorage (falls back silently if storage is unavailable) */
+/** localStorage-backed state shared by every component that uses the same key (one in-memory copy + subscribers). */
+const mem = new Map<string, unknown>(), subs = new Map<string, Set<() => void>>()
 export function useStored<T>(key: string, init: () => T): [T, (v: T | ((p: T) => T)) => void] {
-  const [v, set] = useState<T>(() => {
-    try { const s = localStorage.getItem(key); if (s) return JSON.parse(s) as T } catch { /* ignore */ }
-    return init()
-  })
-  const save = (n: T | ((p: T) => T)) =>
-    set((p) => {
-      const nv = typeof n === 'function' ? (n as (p: T) => T)(p) : n
-      try { localStorage.setItem(key, JSON.stringify(nv)) } catch { /* quota */ }
-      return nv
-    })
+  const read = () => {
+    if (!mem.has(key)) { let v: T; try { const s = localStorage.getItem(key); v = s ? (JSON.parse(s) as T) : init() } catch { v = init() } mem.set(key, v) }
+    return mem.get(key) as T
+  }
+  const v = useSyncExternalStore((cb) => { const set = subs.get(key) ?? subs.set(key, new Set()).get(key)!; set.add(cb); return () => set.delete(cb) }, read)
+  const save = (n: T | ((p: T) => T)) => {
+    const nv = typeof n === 'function' ? (n as (p: T) => T)(read()) : n
+    mem.set(key, nv)
+    try { localStorage.setItem(key, JSON.stringify(nv)) } catch { /* quota */ }
+    subs.get(key)?.forEach((f) => f())
+  }
   return [v, save]
 }
 

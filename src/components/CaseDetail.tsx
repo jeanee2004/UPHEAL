@@ -1,11 +1,12 @@
 import { useState } from 'react'
 import { ATTACHMENTS, DEFINITION, RULES, SECTIONS } from '../data/refugeeForm'
-import { appProgress, ageOf, Case, CONSULT_MODES, DOC_STATUS, DOC_SUGGEST, docProgress, DocStatus, flags, Flag, nextItem, OWNERS, Owner, SEC_DOCS, SEC_STATUS, secRange, secStatus, SecStatus, STAGES, todayIso, uid, daysTo } from '../data/caseModel'
+import { appProgress, ageOf, COUNTRY_NAMES, Case, CONSULT_MODES, DOC_STATUS, DOC_SUGGEST, docProgress, DocStatus, flags, Flag, nextItem, OWNERS, Owner, SEC_DOCS, SEC_STATUS, secRange, secStatus, SecStatus, STAGES, todayIso, uid, daysTo } from '../data/caseModel'
 import { caseSheetHtml, caseSheetMd } from '../data/caseExport'
 import { input, labelCls, Meter, RelDate, SecCells } from './caseUi'
+import TopicChips from './TopicChips'
 import Glyph from './Glyph'
 
-type Tab = 'overview' | 'consults' | 'docs' | 'application' | 'notes'
+type Tab = 'overview' | 'consults' | 'docs' | 'files' | 'application' | 'notes'
 type Props = { c: Case; patch: (fn: (c: Case) => Case) => void; onBack: () => void; onDelete: () => void }
 
 const card = 'rounded-2xl border border-line bg-card p-5 md:p-6'
@@ -31,7 +32,7 @@ export default function CaseDetail({ c, patch, onBack, onDelete }: Props) {
   const set = <K extends keyof Case>(k: K, v: Case[K]) => patch((x) => ({ ...x, [k]: v }))
   const print = () => { const w = window.open('', '_blank'); if (!w) return; w.document.write(caseSheetHtml(c)); w.document.close(); w.focus(); setTimeout(() => w.print(), 300) }
   const download = () => { const a = document.createElement('a'); a.href = URL.createObjectURL(new Blob([caseSheetMd(c)], { type: 'text/markdown' })); a.download = `${c.alias || 'case'}-status.md`; a.click(); URL.revokeObjectURL(a.href) }
-  const tabs: [Tab, string][] = [['overview', 'Overview'], ['consults', `Consultations · ${c.consults.length}`], ['docs', `Documents · ${dp.got}/${dp.total}`], ['application', `Application · ${ap.ok}/${ap.total}`], ['notes', 'Notes']]
+  const tabs: [Tab, string][] = [['overview', 'Overview'], ['consults', `Consultations · ${c.consults.length}`], ['docs', `Documents · ${dp.got}/${dp.total}`], ['files', `Files · ${(c.files ?? []).length}`], ['application', `Application · ${ap.ok}/${ap.total}`], ['notes', 'Notes']]
 
   return (
     <div className="space-y-4" style={{ animation: 'menuIn .45s cubic-bezier(.2,.7,.2,1) both' }}>
@@ -45,9 +46,10 @@ export default function CaseDetail({ c, patch, onBack, onDelete }: Props) {
             <button onClick={() => { if (confirm(`Delete case “${c.alias}” from this browser?`)) onDelete() }} className="pill px-3 py-2 text-[12px] text-mute hover:text-rust">Delete</button>
           </div>
         </div>
-        <div className="mt-5 grid gap-3 md:grid-cols-[1.2fr_1fr_1fr_auto] md:items-end">
+        <div className="mt-5 grid gap-3 md:grid-cols-[1.1fr_1fr_1fr_1fr_auto] md:items-end">
           <div><label className={labelCls} htmlFor="cd-alias">Case alias</label><input id="cd-alias" className={`${input} text-[18px] font-medium`} value={c.alias} onChange={(e) => set('alias', e.target.value)} placeholder="Initials or code" /></div>
-          <div><label className={labelCls} htmlFor="cd-nat">Nationality</label><input id="cd-nat" className={input} value={c.nationality} onChange={(e) => set('nationality', e.target.value)} /></div>
+          <div><label className={labelCls} htmlFor="cd-nat">Nationality</label><input id="cd-nat" list="nat-list" className={input} value={c.nationality} onChange={(e) => set('nationality', e.target.value)} /><datalist id="nat-list">{COUNTRY_NAMES.map((n) => <option key={n} value={n} />)}</datalist></div>
+          <div><label className={labelCls} htmlFor="cd-reg">Region / area</label><input id="cd-reg" className={input} placeholder="e.g. Mandalay" value={c.region ?? ''} onChange={(e) => set('region', e.target.value)} /></div>
           <div><label className={labelCls} htmlFor="cd-lang">Applicant’s language</label><input id="cd-lang" className={input} value={c.lang} onChange={(e) => set('lang', e.target.value)} /></div>
           <div className="flex gap-2">
             <label className="flex cursor-pointer items-center gap-2 rounded-xl border border-line bg-surface px-3 py-2.5 text-[13px]"><input type="checkbox" checked={c.interpreter} onChange={(e) => set('interpreter', e.target.checked)} className="accent-[#EDB021]" />Interpreter</label>
@@ -77,6 +79,7 @@ export default function CaseDetail({ c, patch, onBack, onDelete }: Props) {
       {tab === 'overview' && <Overview c={c} patch={patch} fl={fl} nx={nx} ap={ap} dp={dp} go={setTab} />}
       {tab === 'consults' && <Consults c={c} patch={patch} />}
       {tab === 'docs' && <Docs c={c} patch={patch} />}
+      {tab === 'files' && <Files c={c} patch={patch} />}
       {tab === 'application' && <Application c={c} patch={patch} />}
       {tab === 'notes' && (
         <div className={card}>
@@ -213,6 +216,28 @@ function Docs({ c, patch }: { c: Case; patch: Props['patch'] }) {
           </ul>
         )}
       </div>
+    </div>
+  )
+}
+
+/* ------------------------------------------------------------------ filed articles */
+function Files({ c, patch }: { c: Case; patch: Props['patch'] }) {
+  const files = c.files ?? []
+  const upd = (url: string, fn: (f: NonNullable<Case['files']>[number]) => NonNullable<Case['files']>[number] | null) => patch((x) => ({ ...x, files: (x.files ?? []).flatMap((f) => (f.url === url ? [fn(f)].filter(Boolean) as typeof files : [f])) }))
+  return (
+    <div className={card}>
+      <p className={head}>Filed in this folder ({files.length}) · {c.nationality || 'nationality not set'}{c.region ? ` › ${c.region}` : ''}</p>
+      {files.length === 0 ? <p className="max-w-xl text-[15px] leading-relaxed text-mute">Nothing filed yet. In <a href="#reports" className="text-keydeep underline">Reports</a> or <a href="#countries" className="text-keydeep underline">Countries</a>, choose <b className="font-medium text-ink">{c.alias}</b> as the folder, then press Select — the article is filed here.</p> : (
+        <ul className="divide-y divide-line">
+          {files.map((f) => (
+            <li key={f.url} className="grid gap-3 py-4 md:grid-cols-[1fr_1.1fr_auto] md:items-start">
+              <div className="min-w-0"><p className="font-mono text-[10px] uppercase tracking-widest text-mute"><b className="text-ink">{f.source}</b> · {f.date}</p><a href={f.url} target="_blank" rel="noopener noreferrer" className="mt-1 block text-[16px] font-semibold leading-snug hover:underline">{f.title} ↗</a><TopicChips topics={f.topics} className="mt-2" /></div>
+              <textarea aria-label={`Note on ${f.title}`} rows={2} className={`${input} resize-y`} placeholder="Why it matters for this person…" value={f.note} onChange={(e) => upd(f.url, (x) => ({ ...x, note: e.target.value }))} />
+              <button onClick={() => upd(f.url, () => null)} className="pill px-3 py-2 text-[11px] text-mute hover:text-rust">Remove</button>
+            </li>
+          ))}
+        </ul>
+      )}
     </div>
   )
 }

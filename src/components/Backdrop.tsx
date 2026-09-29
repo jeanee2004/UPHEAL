@@ -36,9 +36,9 @@ export default function Backdrop() {
 
       {/* one drop of ink — parallax wrapper keeps the drift animation separate from the scroll movement */}
       <div className="absolute inset-0" style={{ transform: 'translate3d(0, calc(var(--sy, 0) * -0.11px), 0)' }}>
-        <div className="bd-ink" style={{ right: '-6%', top: '-8%', width: 820, height: 820, opacity: 0.62, ...plume('ink-a', 'radial-gradient(circle at 44% 46%, rgb(6 6 8 / .92) 0%, rgb(6 6 8 / .6) 20%, rgb(6 6 8 / .2) 42%, transparent 66%)') }} />
-        <div className="bd-ink" style={{ left: '-10%', top: '62vh', width: 560, height: 560, opacity: 0.3, animationDuration: '68s', animationDirection: 'alternate-reverse', ...plume('ink-b', 'radial-gradient(circle at 50% 50%, rgb(6 6 8 / .85) 0%, rgb(6 6 8 / .45) 26%, rgb(6 6 8 / .12) 48%, transparent 68%)') }} />
-        <div className="bd-ink" style={{ right: '14%', top: '150vh', width: 420, height: 420, opacity: 0.22, animationDuration: '80s', ...plume('ink-a', 'radial-gradient(circle at 50% 50%, rgb(6 6 8 / .8) 0%, rgb(6 6 8 / .4) 28%, transparent 64%)') }} />
+        <div className="bd-ink" style={{ right: '-6%', top: '-8%', width: 820, height: 820, opacity: 0.4, ...plume('ink-a', 'radial-gradient(circle at 44% 46%, rgb(6 6 8 / .92) 0%, rgb(6 6 8 / .6) 20%, rgb(6 6 8 / .2) 42%, transparent 66%)') }} />
+        <div className="bd-ink" style={{ left: '-10%', top: '62vh', width: 560, height: 560, opacity: 0.2, animationDuration: '68s', animationDirection: 'alternate-reverse', ...plume('ink-b', 'radial-gradient(circle at 50% 50%, rgb(6 6 8 / .85) 0%, rgb(6 6 8 / .45) 26%, rgb(6 6 8 / .12) 48%, transparent 68%)') }} />
+        <div className="bd-ink" style={{ right: '14%', top: '150vh', width: 420, height: 420, opacity: 0.14, animationDuration: '80s', ...plume('ink-a', 'radial-gradient(circle at 50% 50%, rgb(6 6 8 / .8) 0%, rgb(6 6 8 / .4) 28%, transparent 64%)') }} />
       </div>
 
       {/* dark theme: neutral glows */}

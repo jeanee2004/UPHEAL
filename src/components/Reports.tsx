@@ -1,7 +1,8 @@
 import { useMemo, useState } from 'react'
 import { Eyebrow } from './Glyph'
 import ArticleCard, { WarpFilter } from './ArticleCard'
-import SelectedReports, { Selected } from './SelectedReports'
+import SelectedReports from './SelectedReports'
+import { blankCase, CASES_KEY, CaseStore, casesInit, patchFiles, toggleFile } from '../data/caseModel'
 import { Article, burst, useStored } from '../lib'
 import Freshness from './Freshness'
 import news from '../data/articles.json'
@@ -11,7 +12,10 @@ const Pill = ({ on, children, onClick }: { on: boolean; children: React.ReactNod
 )
 
 export default function Reports({ articles }: { articles: Article[] }) {
-  const [saved, setSaved] = useStored<Selected[]>('upheal.selected.v1', () => [])
+  const [store, setStore] = useStored<CaseStore>(CASES_KEY, casesInit)
+  const [activeId, setActive] = useStored<string>('upheal.activeCase', () => '')
+  const cur = store.cases.find((c) => c.id === activeId) ?? store.cases[0]
+  const saved = cur?.files ?? []
   const [region, setRegion] = useState('All')
   const [topic, setTopic] = useState('All')
 
@@ -25,7 +29,7 @@ export default function Reports({ articles }: { articles: Article[] }) {
   }, [articles])
   const list = articles.filter((a) => (region === 'All' || a.region === region) && (topic === 'All' || a.topics.includes(topic)))
   const has = (u: string) => saved.some((s) => s.url === u)
-  const toggle = (a: Article) => setSaved((p) => (p.some((s) => s.url === a.url) ? p.filter((s) => s.url !== a.url) : [{ ...a, note: '' }, ...p]))
+  const toggle = (a: Article) => cur && setStore((s) => toggleFile(s, cur.id, a))
   const stat = (t: string) => articles.filter((a) => a.topics.includes(t)).length
   const sources = new Set(articles.map((a) => a.source)).size
 
@@ -35,15 +39,18 @@ export default function Reports({ articles }: { articles: Article[] }) {
       <div className="reveal grid gap-6 md:grid-cols-2 md:items-end">
         <div>
           <Eyebrow n="01" label="Uncover · Reports" icon="lantern" />
-          <h2 className="mt-4 text-[clamp(44px,7vw,104px)] font-medium leading-[0.95] tracking-[-0.045em]">
-            Uncovering <span className="font-serif font-normal italic tracking-tight">pathways</span>
+          <h2 className="mt-4 font-display text-[clamp(56px,9vw,132px)] font-extrabold uppercase leading-[0.88]">
+            Uncovering <span className="font-serif text-[1.04em] font-normal normal-case italic tracking-normal">pathways</span>
           </h2>
         </div>
         <div className="md:justify-self-end"><p className="max-w-md text-[17px] leading-relaxed text-mute">
-          Research that finds the route to a remedy. Build a shortlist for your matter: press <b className="font-medium text-ink">Select</b> on any report below, add a note, then copy ready-made citations. Every card opens the original article.</p><Freshness iso={news.fetched} className="mt-4" /></div>
+          Research that finds the route to a remedy. Pick a person’s folder, press <b className="font-medium text-ink">Select</b> on any report below and it is filed there — with your note and a ready-made citation. Every card opens the original article.</p><Freshness iso={news.fetched} className="mt-4" /></div>
       </div>
 
-      <SelectedReports items={saved} onRemove={(u) => setSaved((p) => p.filter((s) => s.url !== u))} onNote={(u, n) => setSaved((p) => p.map((s) => (s.url === u ? { ...s, note: n } : s)))} />
+      <SelectedReports items={saved} cases={store.cases} activeId={cur?.id} onPick={setActive}
+        onCreate={(alias, nationality, region) => { const c = blankCase(alias, { nationality, region }); setStore((s) => ({ ...s, cases: [c, ...s.cases] })); setActive(c.id) }}
+        onRemove={(u) => cur && setStore((s) => patchFiles(s, cur.id, (f) => f.filter((x) => x.url !== u)))}
+        onNote={(u, n) => cur && setStore((s) => patchFiles(s, cur.id, (f) => f.map((x) => (x.url === u ? { ...x, note: n } : x))))} />
 
       {/* at a glance */}
       <div className="reveal mt-16 grid grid-cols-2 border-y border-ink/80 md:grid-cols-4">
@@ -59,7 +66,7 @@ export default function Reports({ articles }: { articles: Article[] }) {
         <div className="flex items-center gap-3">
           <span className="hidden w-16 shrink-0 font-mono text-[10px] uppercase tracking-widest text-mute sm:block">Region</span>
           <div role="tablist" aria-label="Region" className="flex max-w-full gap-1 overflow-x-auto rounded-full bg-surface p-1 shadow-sm">
-            {regions.map(([r, n]) => <Pill key={r} on={region === r} onClick={(e) => { setRegion(r); burst(e.clientX, e.clientY) }}>{r}<sup className="ml-0.5 text-[9px] opacity-70">{n}</sup></Pill>)}
+            {regions.map(([r, n]) => <Pill key={r} on={region === r} onClick={(e) => burst(e.clientX, e.clientY, () => setRegion(r))}>{r}<sup className="ml-0.5 text-[9px] opacity-70">{n}</sup></Pill>)}
           </div>
         </div>
         <div className="flex items-center gap-3">

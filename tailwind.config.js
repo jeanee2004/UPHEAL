@@ -27,8 +27,9 @@ export default {
         cream: '#f3efe6',                 // light text on always-dark surfaces
       },
       fontFamily: {
-        serif: ['"Instrument Serif"', 'serif'],
-        sans: ['"Inter Tight"', 'system-ui', 'sans-serif'],
+        serif: ['Newsreader', 'Georgia', 'serif'],
+        sans: ['"Hanken Grotesk"', 'system-ui', 'sans-serif'],
+        display: ['"Big Shoulders Display"', 'Impact', 'sans-serif'],
         mono: ['"JetBrains Mono"', 'monospace'],
       },
     },

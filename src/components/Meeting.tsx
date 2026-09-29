@@ -158,7 +158,7 @@ export default function Meeting() {
       <div className="reveal grid gap-6 md:grid-cols-2 md:items-end">
         <div>
           <Eyebrow n="06" label="Together · Set a meeting" icon="tent" />
-          <h2 className="mt-4 text-[clamp(44px,7vw,104px)] font-medium leading-[0.95] tracking-[-0.045em]">Climb <span className="font-serif font-normal italic tracking-tight">together</span></h2>
+          <h2 className="mt-4 font-display text-[clamp(56px,9vw,132px)] font-extrabold uppercase leading-[0.88]">Climb <span className="font-serif text-[1.04em] font-normal normal-case italic tracking-normal">together</span></h2>
         </div>
         <p className="max-w-md text-[17px] leading-relaxed text-mute md:justify-self-end">You choose who to invite. Pick a purpose, get a recommended email in English or Korean, then send it from your own mail app — and point everyone to the group chat.</p>
       </div>
